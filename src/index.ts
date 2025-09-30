@@ -148,6 +148,9 @@ export {
   matrixTheme,
   matrixMinimalTheme,
   slateTheme,
+  defaultMarkdownTheme,
+  defaultEditorTheme,
+  defaultTerminalTheme,
 } from './themes';
 
 /**

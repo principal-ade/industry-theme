@@ -4,6 +4,11 @@
 
 import { Theme } from './index';
 export { glassmorphismTheme } from './glassmorphismTheme';
+export {
+  defaultMarkdownTheme,
+  defaultEditorTheme,
+  defaultTerminalTheme,
+} from './defaultThemes';
 
 // Regal theme (previous default) - Dark Academia with warm amber gold
 export const regalTheme: Theme = {
