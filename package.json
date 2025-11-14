@@ -1,5 +1,5 @@
 {
-  "name": "@a24z/industry-theme",
+  "name": "@principal-ade/industry-theme",
   "version": "0.1.2",
   "type": "module",
   "description": "Theme components and styles for industry-themed markdown",
@@ -34,7 +34,7 @@
     "theme",
     "industry"
   ],
-  "author": "a24z Team",
+  "author": "Principal ADE Team",
   "license": "MIT",
   "devDependencies": {
     "@eslint/js": "^9.32.0",
@@ -59,6 +59,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/a24z-ai/industry-theme.git"
+    "url": "git+https://github.com/principal-ade/industry-theme.git"
   }
 }
