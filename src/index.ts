@@ -151,6 +151,8 @@ export {
   defaultMarkdownTheme,
   defaultEditorTheme,
   defaultTerminalTheme,
+  landingPageTheme,
+  landingPageLightTheme,
 } from './themes';
 
 /**

@@ -9,6 +9,10 @@ export {
   defaultEditorTheme,
   defaultTerminalTheme,
 } from './defaultThemes';
+export {
+  landingPageTheme,
+  landingPageLightTheme,
+} from './landingPageTheme';
 
 // Regal theme (previous default) - Dark Academia with warm amber gold
 export const regalTheme: Theme = {
