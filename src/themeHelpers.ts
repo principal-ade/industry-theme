@@ -3,10 +3,7 @@ import { Theme } from './index';
 /**
  * Override colors in a theme with type checking
  */
-export function overrideColors<T extends Theme>(
-  theme: T,
-  colors: Partial<T['colors']>
-): T {
+export function overrideColors<T extends Theme>(theme: T, colors: Partial<T['colors']>): T {
   return {
     ...theme,
     colors: {
@@ -27,7 +24,7 @@ export function makeTheme<T extends Theme>(
     fontSizes: T['fontSizes'];
     space: T['space'];
     radii: T['radii'];
-  }>
+  }>,
 ): T {
   return {
     ...baseTheme,
@@ -54,11 +51,11 @@ export function addMode<T extends Theme>(
   theme: T,
   modeName: string,
   colors: Partial<T['colors']>,
-  baseMode?: string
+  baseMode?: string,
 ): T {
   // Get the base colors to merge with
   let baseColors: T['colors'];
-  
+
   if (baseMode && theme.modes && theme.modes[baseMode]) {
     // Merge with an existing mode
     baseColors = {
@@ -69,13 +66,13 @@ export function addMode<T extends Theme>(
     // Use the default theme colors
     baseColors = theme.colors;
   }
-  
+
   // Create the new mode by merging base with new colors
   const newMode = {
     ...baseColors,
     ...colors,
   };
-  
+
   // Return theme with the new mode added
   return {
     ...theme,
@@ -91,14 +88,11 @@ export function addMode<T extends Theme>(
  * @param theme - The theme to get colors from
  * @param mode - The mode name (returns base colors if mode doesn't exist)
  */
-export function getMode<T extends Theme>(
-  theme: T,
-  mode?: string
-): T['colors'] {
+export function getMode<T extends Theme>(theme: T, mode?: string): T['colors'] {
   if (!mode || !theme.modes || !theme.modes[mode]) {
     return theme.colors;
   }
-  
+
   return {
     ...theme.colors,
     ...theme.modes[mode],

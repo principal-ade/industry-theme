@@ -7,6 +7,7 @@ A modern, tech-focused theme extracted from the Principal AI landing page. Featu
 ### Color Palette
 
 #### Primary Colors
+
 - **Primary**: `#00C2FF` - Bright cyan, main brand color
 - **Secondary**: `#0098CC` - Darker cyan for secondary actions
 - **Accent**: `#0066FF` - Blue accent for highlights
@@ -14,12 +15,15 @@ A modern, tech-focused theme extracted from the Principal AI landing page. Featu
 - **Text**: `#ffffff` - Pure white
 
 #### Gradients
+
 The theme features several signature gradients:
+
 - **Primary Gradient**: `linear-gradient(90deg, #00D9FF 0%, #0099FF 50%, #0066FF 100%)`
 - **Brand Gradient**: `linear-gradient(135deg, #00C2FF, #0098CC)`
 - **Background Gradient**: `linear-gradient(180deg, #0a1628 0%, #000000 100%)`
 
 #### Semantic Colors
+
 - **Border**: `rgba(0, 194, 255, 0.2)` - Translucent cyan
 - **Background Secondary**: `#0a1628` - Deep blue-black
 - **Background Tertiary**: `#0f1c2e` - Lighter blue-black
@@ -30,14 +34,17 @@ The theme features several signature gradients:
 ### Typography
 
 #### Font Families
+
 - **Body**: `Inter, "Geist Sans", system-ui, -apple-system, sans-serif`
 - **Heading**: `-apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif`
 - **Monospace**: `"SF Mono", Monaco, Inconsolata, "Fira Code", monospace`
 
 #### Font Sizes
+
 Scale from 12px to 96px with 19 steps for precise control.
 
 #### Font Weights
+
 - Light: 300
 - Regular: 400
 - Medium: 500
@@ -45,6 +52,7 @@ Scale from 12px to 96px with 19 steps for precise control.
 - Bold: 700
 
 #### Line Heights
+
 - Tight: 1.05 (for large headlines)
 - Heading: 1.2
 - Body: 1.6
@@ -57,6 +65,7 @@ Scale from 12px to 96px with 19 steps for precise control.
 ### Layout
 
 #### Breakpoints
+
 - Mobile: `640px`
 - Tablet: `768px`
 - Desktop: `1024px`
@@ -64,9 +73,11 @@ Scale from 12px to 96px with 19 steps for precise control.
 - Extra Large: `1400px`
 
 #### Border Radius
+
 Scale from 0 to 24px with 12 steps: `[0, 2, 4, 6, 7, 8, 9, 10, 12, 14, 16, 24]`
 
 #### Shadows
+
 - None
 - Small: `0 1px 3px 0 rgba(0, 0, 0, 0.1)`
 - Medium: `0 4px 6px -1px rgba(0, 0, 0, 0.1)`
@@ -105,12 +116,14 @@ function MyComponent() {
   const { theme } = useTheme();
 
   return (
-    <div style={{
-      background: theme.colors.background,
-      color: theme.colors.text,
-      padding: theme.space[4], // 16px
-      borderRadius: theme.radii[4], // 8px
-    }}>
+    <div
+      style={{
+        background: theme.colors.background,
+        color: theme.colors.text,
+        padding: theme.space[4], // 16px
+        borderRadius: theme.radii[4], // 8px
+      }}
+    >
       Content
     </div>
   );
@@ -122,14 +135,16 @@ function MyComponent() {
 ### Navigation Bar
 
 ```tsx
-<nav style={{
-  position: 'fixed',
-  top: 0,
-  background: 'rgba(0, 0, 0, 0.8)',
-  backdropFilter: 'blur(10px)',
-  borderBottom: '1px solid rgba(0, 194, 255, 0.2)',
-  padding: '16px 24px',
-}}>
+<nav
+  style={{
+    position: 'fixed',
+    top: 0,
+    background: 'rgba(0, 0, 0, 0.8)',
+    backdropFilter: 'blur(10px)',
+    borderBottom: '1px solid rgba(0, 194, 255, 0.2)',
+    padding: '16px 24px',
+  }}
+>
   {/* Navigation content */}
 </nav>
 ```
@@ -137,22 +152,26 @@ function MyComponent() {
 ### Hero Section
 
 ```tsx
-<div style={{
-  background: '#000000',
-  backgroundImage: `
+<div
+  style={{
+    background: '#000000',
+    backgroundImage: `
     linear-gradient(rgba(209, 213, 219, 0.25) 1px, transparent 1px),
     linear-gradient(90deg, rgba(209, 213, 219, 0.25) 1px, transparent 1px)
   `,
-  backgroundSize: '100px 100px',
-  padding: '100px 20px',
-}}>
-  <h1 style={{
-    fontSize: 'clamp(32px, 6vw, 84px)',
-    fontWeight: 600,
-    background: 'linear-gradient(90deg, #00D9FF 0%, #0099FF 50%, #0066FF 100%)',
-    WebkitBackgroundClip: 'text',
-    WebkitTextFillColor: 'transparent',
-  }}>
+    backgroundSize: '100px 100px',
+    padding: '100px 20px',
+  }}
+>
+  <h1
+    style={{
+      fontSize: 'clamp(32px, 6vw, 84px)',
+      fontWeight: 600,
+      background: 'linear-gradient(90deg, #00D9FF 0%, #0099FF 50%, #0066FF 100%)',
+      WebkitBackgroundClip: 'text',
+      WebkitTextFillColor: 'transparent',
+    }}
+  >
     Your Heading
   </h1>
 </div>
@@ -161,33 +180,39 @@ function MyComponent() {
 ### Button Variants
 
 #### Primary Button
+
 ```tsx
-<button style={{
-  padding: '8px 20px',
-  background: '#00C2FF',
-  color: '#000000',
-  border: 'none',
-  borderRadius: '6px',
-  fontSize: '14px',
-  fontWeight: '600',
-  cursor: 'pointer',
-}}>
+<button
+  style={{
+    padding: '8px 20px',
+    background: '#00C2FF',
+    color: '#000000',
+    border: 'none',
+    borderRadius: '6px',
+    fontSize: '14px',
+    fontWeight: '600',
+    cursor: 'pointer',
+  }}
+>
   Primary Action
 </button>
 ```
 
 #### Secondary Button
+
 ```tsx
-<button style={{
-  padding: '8px 16px',
-  background: 'transparent',
-  color: '#00C2FF',
-  border: '1px solid rgba(0, 194, 255, 0.3)',
-  borderRadius: '6px',
-  fontSize: '14px',
-  fontWeight: '600',
-  cursor: 'pointer',
-}}>
+<button
+  style={{
+    padding: '8px 16px',
+    background: 'transparent',
+    color: '#00C2FF',
+    border: '1px solid rgba(0, 194, 255, 0.3)',
+    borderRadius: '6px',
+    fontSize: '14px',
+    fontWeight: '600',
+    cursor: 'pointer',
+  }}
+>
   Secondary Action
 </button>
 ```
@@ -195,12 +220,14 @@ function MyComponent() {
 ### Card/Section
 
 ```tsx
-<div style={{
-  background: 'rgba(0, 194, 255, 0.05)',
-  border: '1px solid rgba(0, 194, 255, 0.2)',
-  borderRadius: '12px',
-  padding: '32px',
-}}>
+<div
+  style={{
+    background: 'rgba(0, 194, 255, 0.05)',
+    border: '1px solid rgba(0, 194, 255, 0.2)',
+    borderRadius: '12px',
+    padding: '32px',
+  }}
+>
   {/* Card content */}
 </div>
 ```
@@ -230,23 +257,30 @@ onMouseLeave={(e) => {
 ## Design Principles
 
 ### 1. High Contrast
+
 Pure black background with white text ensures maximum readability and a modern, premium feel.
 
 ### 2. Cyan as Primary
+
 The bright cyan (`#00C2FF`) serves as the main brand color, used for:
+
 - Primary CTAs
 - Links and interactive elements
 - Borders and accents
 - Hover states
 
 ### 3. Subtle Depth
+
 Use translucent colors for depth without heavy shadows:
+
 - `rgba(0, 194, 255, 0.05)` for card backgrounds
 - `rgba(0, 194, 255, 0.1)` for hover states
 - `rgba(0, 194, 255, 0.2)` for borders
 
 ### 4. Grid Backgrounds
+
 Optional grid overlays add tech aesthetic:
+
 ```css
 background-image:
   linear-gradient(rgba(209, 213, 219, 0.25) 1px, transparent 1px),
@@ -255,13 +289,17 @@ background-size: 100px 100px;
 ```
 
 ### 5. Smooth Transitions
+
 All interactive elements use smooth transitions:
+
 ```css
 transition: all 0.2s ease;
 ```
 
 ### 6. Responsive Typography
+
 Use clamp() for fluid typography:
+
 ```css
 font-size: clamp(32px, 6vw, 84px);
 ```
@@ -269,6 +307,7 @@ font-size: clamp(32px, 6vw, 84px);
 ## Light Mode
 
 The `landingPageLightTheme` provides an inverted color scheme for light mode:
+
 - White background with near-black text
 - Slightly darker cyan for better contrast
 - Adjusted opacity values for subtle effects
@@ -280,7 +319,7 @@ const [isDark, setIsDark] = useState(true);
 
 <ThemeProvider theme={isDark ? landingPageTheme : landingPageLightTheme}>
   {/* Your app */}
-</ThemeProvider>
+</ThemeProvider>;
 ```
 
 ## Animations
@@ -299,12 +338,13 @@ import { motion } from 'framer-motion';
   transition={{ duration: 0.5 }}
 >
   {/* Content */}
-</motion.div>
+</motion.div>;
 ```
 
 ### Common Animation Patterns
 
 #### Fade In on Scroll
+
 ```tsx
 <motion.div
   initial={{ opacity: 0, y: 20 }}
@@ -314,26 +354,31 @@ import { motion } from 'framer-motion';
 ```
 
 #### Staggered Children
+
 ```tsx
-{items.map((item, i) => (
-  <motion.div
-    key={i}
-    initial={{ opacity: 0, y: 20 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ delay: i * 0.1 }}
-  />
-))}
+{
+  items.map((item, i) => (
+    <motion.div
+      key={i}
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: i * 0.1 }}
+    />
+  ));
+}
 ```
 
 ## Accessibility
 
 The theme maintains WCAG AA contrast ratios:
+
 - White text on black background: 21:1
 - Cyan (#00C2FF) on black: 8.59:1
 - Light gray (#d1d5db) on black: 11.63:1
 
 Ensure interactive elements have:
+
 - Clear focus states
 - Sufficient touch targets (minimum 44x44px)
 - Semantic HTML
@@ -342,6 +387,7 @@ Ensure interactive elements have:
 ## Browser Support
 
 The theme uses modern CSS features:
+
 - CSS Grid
 - Flexbox
 - Backdrop filters
@@ -349,6 +395,7 @@ The theme uses modern CSS features:
 - Gradient text (with WebKit fallback)
 
 Recommended browsers:
+
 - Chrome/Edge 90+
 - Firefox 88+
 - Safari 14+

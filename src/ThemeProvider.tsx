@@ -62,20 +62,20 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
   initialMode,
 }) => {
   const [mode, setMode] = useState<string | undefined>(initialMode);
-  
+
   // Get the theme with the current mode applied
   const activeTheme = React.useMemo(() => {
     if (!mode || !customTheme.modes || !customTheme.modes[mode]) {
       return customTheme;
     }
-    
+
     // Apply the mode colors to the theme
     return {
       ...customTheme,
       colors: getMode(customTheme, mode),
     };
   }, [customTheme, mode]);
-  
+
   // Load saved mode from localStorage on mount
   useEffect(() => {
     if (!initialMode) {
@@ -85,7 +85,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
       }
     }
   }, [initialMode]);
-  
+
   // Save mode to localStorage when it changes
   useEffect(() => {
     if (mode) {
@@ -94,7 +94,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
       localStorage.removeItem('principlemd-theme-mode');
     }
   }, [mode]);
-  
+
   const value: ThemeContextValue = {
     theme: activeTheme,
     mode,
