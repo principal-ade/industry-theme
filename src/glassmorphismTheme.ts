@@ -81,6 +81,9 @@ export const glassmorphismTheme: Theme = {
     // Search highlight colors
     highlightBg: 'rgba(251, 191, 36, 0.3)', // Transparent yellow
     highlightBorder: 'rgba(251, 191, 36, 0.5)', // Stronger yellow border
+
+    // Text on primary background
+    textOnPrimary: '#ffffff', // White text on indigo primary
   },
 
   // Dark mode with different transparency levels
@@ -141,7 +144,7 @@ export const glassmorphismTheme: Theme = {
 
       highlightBg: 'rgba(251, 191, 36, 0.4)',
       highlightBorder: 'rgba(251, 191, 36, 0.7)',
-    }
+    },
   },
 
   // Component variants

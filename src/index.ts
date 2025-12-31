@@ -45,7 +45,7 @@ export interface Theme {
   modes?: {
     [modeName: string]: Partial<Theme['colors']>;
   };
-  
+
   // Scale values for consistent spacing
   space: number[];
 
@@ -115,6 +115,9 @@ export interface Theme {
     // Search highlight colors
     highlightBg?: string;
     highlightBorder?: string;
+
+    // Text color for use on primary background (e.g., button text)
+    textOnPrimary: string;
   };
 
   // Component variants (optional but useful)
@@ -135,7 +138,6 @@ export interface Theme {
     secondary: CardVariant;
   };
 }
-
 
 // Default theme - Terminal theme for developers
 export const theme: Theme = terminalTheme;
@@ -166,7 +168,7 @@ export function scaleThemeFonts(theme: Theme, scale: number): Theme {
 
   return {
     ...theme,
-    fontSizes: theme.fontSizes.map(size => Math.round(size * effectiveScale)),
+    fontSizes: theme.fontSizes.map((size) => Math.round(size * effectiveScale)),
     fontScale: scale,
   };
 }
@@ -197,11 +199,7 @@ export function resetFontScale(theme: Theme): Theme {
 }
 
 // Export ThemeProvider and related utilities
-export {
-  ThemeProvider,
-  useTheme,
-  withTheme,
-} from './ThemeProvider';
+export { ThemeProvider, useTheme, withTheme } from './ThemeProvider';
 
 // Export theme utilities
 export {
@@ -218,12 +216,7 @@ export {
 } from './utils';
 
 // Export theme helper functions
-export {
-  overrideColors,
-  makeTheme,
-  addMode,
-  getMode
-} from './themeHelpers';
+export { overrideColors, makeTheme, addMode, getMode } from './themeHelpers';
 
 // Export ThemeShowcase component
 export { ThemeShowcase } from './ThemeShowcase';

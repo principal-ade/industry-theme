@@ -4,15 +4,8 @@
 
 import { Theme } from './index';
 export { glassmorphismTheme } from './glassmorphismTheme';
-export {
-  defaultMarkdownTheme,
-  defaultEditorTheme,
-  defaultTerminalTheme,
-} from './defaultThemes';
-export {
-  landingPageTheme,
-  landingPageLightTheme,
-} from './landingPageTheme';
+export { defaultMarkdownTheme, defaultEditorTheme, defaultTerminalTheme } from './defaultThemes';
+export { landingPageTheme, landingPageLightTheme } from './landingPageTheme';
 
 // Regal theme (previous default) - Dark Academia with warm amber gold
 export const regalTheme: Theme = {
@@ -91,6 +84,9 @@ export const regalTheme: Theme = {
     // Search highlight colors
     highlightBg: 'rgba(255, 193, 7, 0.25)', // Semi-transparent amber/yellow
     highlightBorder: 'rgba(255, 193, 7, 0.5)', // Stronger amber for border
+
+    // Text on primary background
+    textOnPrimary: '#1a1f2e', // Dark text on warm amber primary
   },
 
   // Component variants
@@ -228,6 +224,9 @@ export const terminalTheme: Theme = {
     // Search highlight colors
     highlightBg: 'rgba(255, 235, 59, 0.25)', // Yellow highlight
     highlightBorder: 'rgba(255, 235, 59, 0.5)', // Stronger yellow for border
+
+    // Text on primary background
+    textOnPrimary: '#ffffff', // White text on blue primary
   },
 
   // Light mode for terminal theme
@@ -404,6 +403,9 @@ export const matrixTheme: Theme = {
     // Search highlight colors
     highlightBg: 'rgba(0, 216, 53, 0.25)', // Softer green highlight
     highlightBorder: 'rgba(0, 216, 53, 0.5)', // Stronger softer green for border
+
+    // Text on primary background
+    textOnPrimary: '#000000', // Black text on green primary
   },
 
   // Component variants
@@ -545,6 +547,9 @@ export const matrixMinimalTheme: Theme = {
     // Search highlight colors
     highlightBg: 'rgba(0, 216, 53, 0.2)', // Softer green highlight for search
     highlightBorder: 'rgba(0, 216, 53, 0.4)', // Stronger softer green for border
+
+    // Text on primary background
+    textOnPrimary: '#000000', // Black text on off-white primary
   },
 
   // Component variants
@@ -686,6 +691,9 @@ export const slateTheme: Theme = {
     // Search highlight colors
     highlightBg: 'rgba(245, 158, 11, 0.25)', // Amber highlight
     highlightBorder: 'rgba(245, 158, 11, 0.5)', // Stronger amber for border
+
+    // Text on primary background
+    textOnPrimary: '#1a1c1e', // Dark text on light grey primary
   },
 
   // Component variants

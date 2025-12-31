@@ -12,11 +12,12 @@ export const landingPageTheme: Theme = {
   // Typography - Modern, clean system fonts
   fonts: {
     body: 'Inter, "Geist Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
-    heading: '-apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    heading:
+      '-apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     monospace: '"SF Mono", Monaco, Inconsolata, "Fira Code", monospace',
   },
 
-  fontSizes: [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 24, 28, 32, 36, 48, 56, 68, 84, 96],
+  fontSizes: [12, 14, 16, 18, 20, 24, 32, 48, 64, 96],
 
   fontScale: 1.0,
 
@@ -81,6 +82,9 @@ export const landingPageTheme: Theme = {
     // Search highlight colors
     highlightBg: 'rgba(255, 235, 59, 0.25)', // Yellow highlight
     highlightBorder: 'rgba(255, 235, 59, 0.5)', // Stronger yellow for border
+
+    // Text on primary background
+    textOnPrimary: '#000000', // Black text on cyan primary
 
     // Additional brand colors used in gradients
     // These are not part of the standard Theme interface but used in components
@@ -204,6 +208,9 @@ export const landingPageLightTheme: Theme = {
     // Search highlight colors
     highlightBg: 'rgba(255, 235, 59, 0.3)', // Yellow highlight
     highlightBorder: 'rgba(255, 235, 59, 0.6)', // Stronger yellow for border
+
+    // Text on primary background
+    textOnPrimary: '#ffffff', // White text on cyan primary
   },
 
   buttons: {

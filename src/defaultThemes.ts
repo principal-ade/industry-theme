@@ -70,6 +70,9 @@ export const defaultMarkdownTheme: Theme = {
     textMuted: '#aaaaaa',
     highlightBg: 'rgba(255, 235, 59, 0.3)',
     highlightBorder: 'rgba(255, 235, 59, 0.6)',
+
+    // Text on primary background
+    textOnPrimary: '#ffffff', // White text on blue primary
   },
 
   // Component variants
@@ -191,6 +194,9 @@ export const defaultTerminalTheme: Theme = {
     textMuted: '#808080',
     highlightBg: 'rgba(255, 193, 7, 0.2)',
     highlightBorder: 'rgba(255, 193, 7, 0.4)',
+
+    // Text on primary background
+    textOnPrimary: '#000000', // Black text on amber primary
   },
 
   // Component variants
@@ -313,6 +319,9 @@ export const defaultEditorTheme: Theme = {
     textMuted: '#666666',
     highlightBg: 'rgba(255, 235, 59, 0.2)',
     highlightBorder: 'rgba(255, 235, 59, 0.4)',
+
+    // Text on primary background
+    textOnPrimary: '#ffffff', // White text on blue primary
   },
 
   // Component variants
