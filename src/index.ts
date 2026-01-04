@@ -146,7 +146,6 @@ export const theme: Theme = terminalTheme;
 export {
   terminalTheme,
   regalTheme,
-  glassmorphismTheme,
   matrixTheme,
   matrixMinimalTheme,
   slateTheme,

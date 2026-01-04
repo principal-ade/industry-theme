@@ -59,7 +59,7 @@ export const landingPageTheme: Theme = {
     primary: '#00C2FF', // Bright cyan - main brand color
     secondary: '#0098CC', // Darker cyan for secondary actions
     accent: '#0066FF', // Blue accent
-    highlight: 'rgba(0, 194, 255, 0.15)', // Translucent cyan highlight
+    highlight: '#001d26', // Dark cyan highlight
     muted: '#1a1a1a', // Very dark gray
 
     // Status colors
@@ -69,19 +69,19 @@ export const landingPageTheme: Theme = {
     info: '#2196f3', // Blue
 
     // Additional semantic colors
-    border: 'rgba(0, 194, 255, 0.2)', // Translucent cyan borders
+    border: '#002733', // Dark cyan border
     backgroundSecondary: '#0a1628', // Deep blue-black
     backgroundTertiary: '#0f1c2e', // Lighter blue-black
-    backgroundLight: 'rgba(0, 194, 255, 0.04)', // Very subtle cyan tint
-    backgroundHover: 'rgba(0, 194, 255, 0.1)', // Subtle cyan hover
-    surface: 'rgba(0, 0, 0, 0.4)', // Semi-transparent black for overlays
+    backgroundLight: '#00080a', // Very subtle cyan tint
+    backgroundHover: '#00131a', // Subtle cyan hover
+    surface: '#000000', // Black for overlays
     textSecondary: '#d1d5db', // Light gray for secondary text
     textTertiary: '#9ca3af', // Medium gray for tertiary text
     textMuted: '#6b7280', // Darker gray for muted text
 
     // Search highlight colors
-    highlightBg: 'rgba(255, 235, 59, 0.25)', // Yellow highlight
-    highlightBorder: 'rgba(255, 235, 59, 0.5)', // Stronger yellow for border
+    highlightBg: '#403b0f', // Yellow highlight
+    highlightBorder: '#80761e', // Stronger yellow for border
 
     // Text on primary background
     textOnPrimary: '#000000', // Black text on cyan primary
@@ -114,13 +114,13 @@ export const landingPageTheme: Theme = {
       bg: 'transparent',
       borderWidth: 1,
       borderStyle: 'solid',
-      borderColor: 'rgba(0, 194, 255, 0.3)',
+      borderColor: '#003a4d',
       padding: '8px 16px',
       fontSize: 14,
       fontWeight: 600,
       cursor: 'pointer',
       '&:hover': {
-        bg: 'rgba(0, 194, 255, 0.1)',
+        bg: '#00131a',
         borderColor: '#00C2FF',
       },
     },
@@ -134,7 +134,7 @@ export const landingPageTheme: Theme = {
       cursor: 'pointer',
       '&:hover': {
         color: '#00D9FF',
-        bg: 'rgba(0, 194, 255, 0.1)',
+        bg: '#00131a',
       },
     },
   },
@@ -166,9 +166,9 @@ export const landingPageTheme: Theme = {
       borderRadius: 4,
     },
     secondary: {
-      bg: 'rgba(0, 194, 255, 0.05)',
+      bg: '#000a0d',
       border: '1px solid',
-      borderColor: 'rgba(0, 194, 255, 0.2)',
+      borderColor: '#002733',
       borderRadius: 4,
     },
   },
@@ -185,7 +185,7 @@ export const landingPageLightTheme: Theme = {
     primary: '#0098CC', // Slightly darker cyan for better contrast
     secondary: '#00C2FF', // Lighter cyan for hover
     accent: '#0066FF', // Blue accent
-    highlight: 'rgba(0, 152, 204, 0.1)', // Translucent cyan highlight
+    highlight: '#e6f5fa', // Light cyan highlight
     muted: '#f0f0f0', // Light gray
 
     // Status colors
@@ -195,19 +195,19 @@ export const landingPageLightTheme: Theme = {
     info: '#2196f3', // Blue
 
     // Additional semantic colors
-    border: 'rgba(0, 152, 204, 0.2)', // Translucent cyan borders
+    border: '#cceaf5', // Light cyan border
     backgroundSecondary: '#f8f9fa', // Very light gray
     backgroundTertiary: '#e9ecef', // Light gray
-    backgroundLight: 'rgba(0, 152, 204, 0.03)', // Very subtle cyan tint
-    backgroundHover: 'rgba(0, 152, 204, 0.05)', // Subtle cyan hover
-    surface: 'rgba(255, 255, 255, 0.95)', // Semi-transparent white
+    backgroundLight: '#f7fcfd', // Very subtle cyan tint
+    backgroundHover: '#f2fafc', // Subtle cyan hover
+    surface: '#ffffff', // White
     textSecondary: '#555555', // Dark gray for secondary text
     textTertiary: '#888888', // Medium gray for tertiary text
     textMuted: '#aaaaaa', // Light gray for muted text
 
     // Search highlight colors
-    highlightBg: 'rgba(255, 235, 59, 0.3)', // Yellow highlight
-    highlightBorder: 'rgba(255, 235, 59, 0.6)', // Stronger yellow for border
+    highlightBg: '#fff9c4', // Yellow highlight
+    highlightBorder: '#fff389', // Stronger yellow for border
 
     // Text on primary background
     textOnPrimary: '#ffffff', // White text on cyan primary
@@ -231,13 +231,13 @@ export const landingPageLightTheme: Theme = {
       bg: 'transparent',
       borderWidth: 1,
       borderStyle: 'solid',
-      borderColor: 'rgba(0, 152, 204, 0.3)',
+      borderColor: '#b2e0f0',
       padding: '8px 16px',
       fontSize: 14,
       fontWeight: 600,
       cursor: 'pointer',
       '&:hover': {
-        bg: 'rgba(0, 152, 204, 0.05)',
+        bg: '#f2fafc',
         borderColor: '#0098CC',
       },
     },
@@ -251,7 +251,7 @@ export const landingPageLightTheme: Theme = {
       cursor: 'pointer',
       '&:hover': {
         color: '#007aa8',
-        bg: 'rgba(0, 152, 204, 0.05)',
+        bg: '#f2fafc',
       },
     },
   },

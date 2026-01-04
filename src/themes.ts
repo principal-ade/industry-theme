@@ -3,7 +3,6 @@
  */
 
 import { Theme } from './index';
-export { glassmorphismTheme } from './glassmorphismTheme';
 export { defaultMarkdownTheme, defaultEditorTheme, defaultTerminalTheme } from './defaultThemes';
 export { landingPageTheme, landingPageLightTheme } from './landingPageTheme';
 
@@ -61,7 +60,7 @@ export const regalTheme: Theme = {
     primary: '#d4a574', // Warm amber gold
     secondary: '#e0b584', // Lighter amber on hover
     accent: '#c9b8a3', // Muted gold
-    highlight: 'rgba(212, 165, 116, 0.15)', // Translucent amber
+    highlight: '#363338', // Amber highlight
     muted: '#8b7968', // Faded bronze
 
     // Status colors - Jewel tones
@@ -71,19 +70,19 @@ export const regalTheme: Theme = {
     info: '#d4a574', // Using primary amber
 
     // Additional semantic colors
-    border: 'rgba(212, 165, 116, 0.2)', // Translucent gold
+    border: '#3f3a3c', // Gold border
     backgroundSecondary: '#212738', // Slightly lighter navy
     backgroundTertiary: '#2d3446', // Tertiary dark blue
-    backgroundLight: 'rgba(212, 165, 116, 0.08)', // Very light amber
-    backgroundHover: 'rgba(212, 165, 116, 0.15)', // Translucent amber hover
+    backgroundLight: '#292a34', // Very light amber
+    backgroundHover: '#363338', // Amber hover
     surface: '#212738', // Dark navy surface
     textSecondary: '#c9b8a3', // Muted gold
     textTertiary: '#8b7968', // Faded bronze
     textMuted: '#8b7968', // Faded bronze
 
     // Search highlight colors
-    highlightBg: 'rgba(255, 193, 7, 0.25)', // Semi-transparent amber/yellow
-    highlightBorder: 'rgba(255, 193, 7, 0.5)', // Stronger amber for border
+    highlightBg: '#534724', // Amber/yellow highlight
+    highlightBorder: '#8c701a', // Stronger amber for border
 
     // Text on primary background
     textOnPrimary: '#1a1f2e', // Dark text on warm amber primary
@@ -193,16 +192,16 @@ export const terminalTheme: Theme = {
   ],
   zIndices: [0, 1, 10, 20, 30, 40, 50],
 
-  // Colors - Dark terminal theme with transparency
+  // Colors - Dark terminal theme
   colors: {
-    // Base colors - Dark terminal inspired with transparency
+    // Base colors - Dark terminal inspired
     text: '#e4e4e4', // Light gray
-    background: 'rgba(10, 10, 10, 0.85)', // Semi-transparent almost black
+    background: '#0a0a0a', // Almost black
     primary: '#66b3ff', // Bright terminal blue
     secondary: '#80c4ff', // Lighter blue
     accent: '#66ff99', // Bright terminal green
-    highlight: 'rgba(102, 179, 255, 0.15)', // Translucent blue
-    muted: 'rgba(26, 26, 26, 0.8)', // Semi-transparent dark gray
+    highlight: '#18283d', // Dark blue highlight
+    muted: '#1a1a1a', // Dark gray
 
     // Status colors - Terminal inspired
     success: '#66ff99', // Bright green
@@ -210,20 +209,20 @@ export const terminalTheme: Theme = {
     error: '#ff6666', // Bright red
     info: '#66b3ff', // Bright blue
 
-    // Additional semantic colors with transparency
-    border: 'rgba(255, 255, 255, 0.1)', // Transparent white border
-    backgroundSecondary: 'rgba(15, 15, 15, 0.9)', // Semi-transparent slightly lighter black
-    backgroundTertiary: 'rgba(20, 20, 20, 0.9)', // Semi-transparent even lighter black
-    backgroundLight: 'rgba(255, 255, 255, 0.05)', // Very transparent white
-    backgroundHover: 'rgba(102, 179, 255, 0.08)', // Subtle blue hover
-    surface: 'rgba(15, 15, 15, 0.95)', // Nearly opaque dark surface
-    textSecondary: 'rgba(255, 255, 255, 0.7)', // 70% white
-    textTertiary: 'rgba(255, 255, 255, 0.5)', // 50% white
-    textMuted: 'rgba(255, 255, 255, 0.4)', // 40% white
+    // Additional semantic colors
+    border: '#1a1a1a', // Dark border
+    backgroundSecondary: '#0f0f0f', // Slightly lighter black
+    backgroundTertiary: '#141414', // Even lighter black
+    backgroundLight: '#0d0d0d', // Very subtle lighter
+    backgroundHover: '#0d1520', // Subtle blue-tinted hover
+    surface: '#0f0f0f', // Dark surface
+    textSecondary: '#b3b3b3', // 70% white
+    textTertiary: '#808080', // 50% white
+    textMuted: '#666666', // 40% white
 
     // Search highlight colors
-    highlightBg: 'rgba(255, 235, 59, 0.25)', // Yellow highlight
-    highlightBorder: 'rgba(255, 235, 59, 0.5)', // Stronger yellow for border
+    highlightBg: '#40391e', // Yellow highlight
+    highlightBorder: '#7f7530', // Stronger yellow for border
 
     // Text on primary background
     textOnPrimary: '#ffffff', // White text on blue primary
@@ -232,14 +231,14 @@ export const terminalTheme: Theme = {
   // Light mode for terminal theme
   modes: {
     light: {
-      // Base colors - Light terminal with transparency
+      // Base colors - Light terminal
       text: '#1a1a1a', // Almost black
-      background: 'rgba(255, 255, 255, 0.9)', // Semi-transparent white
+      background: '#ffffff', // White
       primary: '#0066cc', // Classic terminal blue
       secondary: '#0052a3', // Darker blue
       accent: '#00cc88', // Terminal green
-      highlight: 'rgba(0, 102, 204, 0.08)', // Very light blue highlight
-      muted: 'rgba(245, 245, 245, 0.8)', // Semi-transparent light gray
+      highlight: '#e6f2ff', // Very light blue highlight
+      muted: '#f5f5f5', // Light gray
 
       // Status colors - Terminal inspired
       success: '#00cc88', // Green
@@ -247,20 +246,20 @@ export const terminalTheme: Theme = {
       error: '#ff3333', // Red
       info: '#0066cc', // Blue
 
-      // Additional semantic colors with transparency
-      border: 'rgba(0, 0, 0, 0.1)', // Transparent black border
-      backgroundSecondary: 'rgba(250, 250, 250, 0.9)', // Semi-transparent very light gray
-      backgroundTertiary: 'rgba(245, 245, 245, 0.9)', // Semi-transparent light gray
-      backgroundLight: 'rgba(0, 0, 0, 0.02)', // Very transparent black
-      backgroundHover: 'rgba(0, 102, 204, 0.04)', // Very subtle blue hover
-      surface: 'rgba(255, 255, 255, 0.95)', // Nearly opaque white surface
-      textSecondary: 'rgba(0, 0, 0, 0.6)', // 60% black
-      textTertiary: 'rgba(0, 0, 0, 0.4)', // 40% black
-      textMuted: 'rgba(0, 0, 0, 0.3)', // 30% black
+      // Additional semantic colors
+      border: '#e6e6e6', // Light border
+      backgroundSecondary: '#fafafa', // Very light gray
+      backgroundTertiary: '#f5f5f5', // Light gray
+      backgroundLight: '#fafafa', // Very subtle lighter
+      backgroundHover: '#f5f9fd', // Very subtle blue hover
+      surface: '#ffffff', // White surface
+      textSecondary: '#666666', // 60% black
+      textTertiary: '#999999', // 40% black
+      textMuted: '#b3b3b3', // 30% black
 
       // Search highlight colors
-      highlightBg: 'rgba(255, 235, 59, 0.3)', // Light yellow highlight
-      highlightBorder: 'rgba(255, 235, 59, 0.6)', // Stronger yellow for border
+      highlightBg: '#fff9c4', // Light yellow highlight
+      highlightBorder: '#fff389', // Stronger yellow for border
     },
   },
 
@@ -380,7 +379,7 @@ export const matrixTheme: Theme = {
     primary: '#00d835', // Softer Matrix green for primary actions
     secondary: '#00a828', // Darker softer green for secondary
     accent: '#00d835', // Softer Matrix green accent
-    highlight: 'rgba(0, 216, 53, 0.15)', // Translucent softer green highlight
+    highlight: '#002008', // Dark green highlight
     muted: '#0a0a0a', // Very dark gray
 
     // Status colors - More variety while keeping Matrix feel
@@ -390,19 +389,19 @@ export const matrixTheme: Theme = {
     info: '#00a8d6', // Softer cyan for info
 
     // Additional semantic colors
-    border: 'rgba(0, 216, 53, 0.2)', // Subtle softer green border
+    border: '#002b0b', // Subtle green border
     backgroundSecondary: '#0a0a0a', // Very dark gray
     backgroundTertiary: '#111111', // Slightly lighter dark gray
-    backgroundLight: 'rgba(0, 216, 53, 0.03)', // Very faint softer green glow
-    backgroundHover: 'rgba(0, 216, 53, 0.08)', // Subtle softer green hover
+    backgroundLight: '#000602', // Very faint green glow
+    backgroundHover: '#001104', // Subtle green hover
     surface: '#050505', // Almost black
     textSecondary: '#808080', // Even softer gray for secondary text
     textTertiary: '#606060', // Much softer medium gray
     textMuted: '#484848', // Much softer darker gray
 
     // Search highlight colors
-    highlightBg: 'rgba(0, 216, 53, 0.25)', // Softer green highlight
-    highlightBorder: 'rgba(0, 216, 53, 0.5)', // Stronger softer green for border
+    highlightBg: '#00360d', // Green highlight
+    highlightBorder: '#006c1b', // Stronger green for border
 
     // Text on primary background
     textOnPrimary: '#000000', // Black text on green primary
@@ -524,7 +523,7 @@ export const matrixMinimalTheme: Theme = {
     primary: '#b8b8b8', // Much softer off-white for primary
     secondary: '#909090', // Much softer light gray for secondary
     accent: '#00d835', // Softer Matrix green for accents only
-    highlight: 'rgba(0, 216, 53, 0.1)', // Very subtle softer green highlight
+    highlight: '#001605', // Very subtle green highlight
     muted: '#0a0a0a', // Very dark gray
 
     // Status colors - Practical colors
@@ -534,19 +533,19 @@ export const matrixMinimalTheme: Theme = {
     info: '#00a8d6', // Softer cyan for info
 
     // Additional semantic colors
-    border: 'rgba(184, 184, 184, 0.1)', // Subtle softer off-white border
+    border: '#121212', // Subtle off-white border
     backgroundSecondary: '#0a0a0a', // Very dark gray
     backgroundTertiary: '#111111', // Slightly lighter dark gray
-    backgroundLight: 'rgba(184, 184, 184, 0.02)', // Very faint softer off-white glow
-    backgroundHover: 'rgba(0, 216, 53, 0.05)', // Very subtle softer green hover
+    backgroundLight: '#040404', // Very faint off-white glow
+    backgroundHover: '#000b03', // Very subtle green hover
     surface: '#050505', // Almost black
     textSecondary: '#808080', // Even softer gray for secondary text
     textTertiary: '#606060', // Much softer medium gray
     textMuted: '#484848', // Much softer darker gray
 
     // Search highlight colors
-    highlightBg: 'rgba(0, 216, 53, 0.2)', // Softer green highlight for search
-    highlightBorder: 'rgba(0, 216, 53, 0.4)', // Stronger softer green for border
+    highlightBg: '#002b0b', // Green highlight for search
+    highlightBorder: '#005615', // Stronger green for border
 
     // Text on primary background
     textOnPrimary: '#000000', // Black text on off-white primary
@@ -668,7 +667,7 @@ export const slateTheme: Theme = {
     primary: '#d1d5db', // Light grey for primary
     secondary: '#6b7280', // Medium grey for secondary
     accent: '#f59e0b', // Vibrant amber
-    highlight: 'rgba(209, 213, 219, 0.15)', // Translucent light grey
+    highlight: '#353838', // Light grey highlight
     muted: '#2d3134', // Dark grey
 
     // Status colors - Vibrant and practical
@@ -678,19 +677,19 @@ export const slateTheme: Theme = {
     info: '#3b82f6', // Blue
 
     // Additional semantic colors - Grey palette
-    border: 'rgba(156, 163, 175, 0.15)', // Subtle grey border
+    border: '#2d3034', // Subtle grey border
     backgroundSecondary: '#22252a', // Slightly lighter dark grey
     backgroundTertiary: '#2d3134', // Even lighter dark grey
-    backgroundLight: 'rgba(156, 163, 175, 0.05)', // Very faint grey
-    backgroundHover: 'rgba(156, 163, 175, 0.1)', // Subtle grey hover
+    backgroundLight: '#202325', // Very faint grey
+    backgroundHover: '#27292c', // Subtle grey hover
     surface: '#1f2124', // Near-black surface
     textSecondary: '#e5e7eb', // Light grey for important text (closer to white)
     textTertiary: '#6b7280', // Darker grey
     textMuted: '#4b5563', // Even darker grey
 
     // Search highlight colors
-    highlightBg: 'rgba(245, 158, 11, 0.25)', // Amber highlight
-    highlightBorder: 'rgba(245, 158, 11, 0.5)', // Stronger amber for border
+    highlightBg: '#513c19', // Amber highlight
+    highlightBorder: '#875d14', // Stronger amber for border
 
     // Text on primary background
     textOnPrimary: '#1a1c1e', // Dark text on light grey primary
