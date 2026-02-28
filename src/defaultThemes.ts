@@ -258,10 +258,10 @@ export const defaultEditorTheme: Theme = {
   // Spacing scale
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
 
-  // Typography
+  // Typography - Using regal fonts (Inter body, Crimson Text headings)
   fonts: {
-    body: '"Fira Code", "SF Mono", Monaco, Inconsolata, monospace',
-    heading: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    body: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    heading: '"Crimson Text", "Georgia", "Times New Roman", serif',
     monospace: '"Fira Code", "SF Mono", Monaco, Inconsolata, monospace',
   },
   fontSizes: [12, 14, 16, 18, 20, 24, 32, 48, 64, 96],
