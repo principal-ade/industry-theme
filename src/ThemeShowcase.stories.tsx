@@ -5,6 +5,9 @@ import {
   regalTheme,
   matrixTheme,
   slateTheme,
+  enterpriseTheme,
+  neuralPulseTheme,
+  humanCentricTheme,
   landingPageTheme,
   landingPageLightTheme,
 } from './themes';
@@ -63,6 +66,30 @@ export const Slate: Story = {
   args: {
     theme: slateTheme,
     title: 'Slate Theme',
+    showValues: true,
+  },
+};
+
+export const Enterprise: Story = {
+  args: {
+    theme: enterpriseTheme,
+    title: 'Enterprise Theme',
+    showValues: true,
+  },
+};
+
+export const NeuralPulse: Story = {
+  args: {
+    theme: neuralPulseTheme,
+    title: 'Neural Pulse Theme',
+    showValues: true,
+  },
+};
+
+export const HumanCentric: Story = {
+  args: {
+    theme: humanCentricTheme,
+    title: 'Human-Centric Theme',
     showValues: true,
   },
 };

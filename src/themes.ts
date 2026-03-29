@@ -613,6 +613,500 @@ export const matrixMinimalTheme: Theme = {
   },
 };
 
+// Enterprise theme - Best for enterprise solutions, high-level consulting, and stability
+export const enterpriseTheme: Theme = {
+  // Spacing scale (used for margin, padding, etc.)
+  space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+
+  // Typography - Professional, authoritative fonts
+  fonts: {
+    body: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    heading: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    monospace: '"Fira Code", "SF Mono", Monaco, Inconsolata, monospace',
+  },
+
+  fontSizes: [12, 14, 16, 18, 20, 24, 32, 48, 64, 96],
+
+  fontScale: 1.0,
+
+  fontWeights: {
+    body: 400,
+    heading: 600,
+    bold: 700,
+    light: 300,
+    medium: 500,
+    semibold: 600,
+  },
+
+  lineHeights: {
+    body: 1.6,
+    heading: 1.3,
+    tight: 1.25,
+    relaxed: 1.75,
+  },
+
+  // Layout
+  breakpoints: ['640px', '768px', '1024px', '1280px'],
+  sizes: [16, 32, 64, 128, 256, 512, 768, 1024, 1536],
+  radii: [0, 2, 4, 6, 8, 12, 16, 24],
+  shadows: [
+    'none',
+    '0 1px 3px 0 rgba(10, 25, 47, 0.1), 0 1px 2px 0 rgba(10, 25, 47, 0.06)',
+    '0 4px 6px -1px rgba(10, 25, 47, 0.1), 0 2px 4px -1px rgba(10, 25, 47, 0.06)',
+    '0 10px 15px -3px rgba(10, 25, 47, 0.1), 0 4px 6px -2px rgba(10, 25, 47, 0.05)',
+    '0 20px 25px -5px rgba(10, 25, 47, 0.1), 0 10px 10px -5px rgba(10, 25, 47, 0.04)',
+    '0 25px 50px -12px rgba(10, 25, 47, 0.25)',
+  ],
+  zIndices: [0, 1, 10, 20, 30, 40, 50],
+
+  // Colors - Enterprise: Midnight Navy, Glacier White, Circuit Gold, Slate Grey
+  colors: {
+    // Base colors
+    text: '#F8FAFC', // Glacier White - crisp, clean
+    background: '#0A192F', // Midnight Navy - deep, authoritative
+    primary: '#D4AF37', // Circuit Gold - sophisticated accent
+    secondary: '#E5C464', // Lighter gold for hover states
+    accent: '#D4AF37', // Circuit Gold
+    highlight: '#122540', // Lighter navy for highlights
+    muted: '#475569', // Slate Grey
+
+    // Status colors - Professional palette
+    success: '#10B981', // Emerald green
+    warning: '#D4AF37', // Circuit Gold (consistency)
+    error: '#DC2626', // Professional red
+    info: '#3B82F6', // Professional blue
+
+    // Additional semantic colors
+    border: '#1E3A5F', // Mid-tone navy border
+    backgroundSecondary: '#0D2240', // Slightly lighter navy
+    backgroundTertiary: '#122540', // Even lighter navy
+    backgroundLight: '#0B1E38', // Very subtle lighter navy
+    backgroundHover: '#142D4C', // Navy hover state
+    surface: '#0D2240', // Surface color
+    textSecondary: '#CBD5E1', // Light slate for secondary text
+    textTertiary: '#475569', // Slate Grey
+    textMuted: '#64748B', // Lighter slate
+
+    // Search highlight colors
+    highlightBg: '#3D3215', // Gold-tinted highlight
+    highlightBorder: '#8B7722', // Stronger gold border
+
+    // Text on primary background
+    textOnPrimary: '#0A192F', // Midnight Navy on gold
+  },
+
+  // Light mode variant
+  modes: {
+    light: {
+      text: '#0A192F', // Midnight Navy
+      background: '#F8FAFC', // Glacier White
+      primary: '#D4AF37', // Circuit Gold
+      secondary: '#B8942E', // Darker gold for hover
+      accent: '#D4AF37', // Circuit Gold
+      highlight: '#FEF9E7', // Light gold tint
+      muted: '#E2E8F0', // Light slate
+
+      success: '#059669', // Darker emerald
+      warning: '#B8942E', // Darker gold
+      error: '#B91C1C', // Darker red
+      info: '#2563EB', // Darker blue
+
+      border: '#CBD5E1', // Slate border
+      backgroundSecondary: '#F1F5F9', // Slightly darker white
+      backgroundTertiary: '#E2E8F0', // Light slate
+      backgroundLight: '#FFFFFF', // Pure white
+      backgroundHover: '#EEF2F6', // Subtle hover
+      surface: '#FFFFFF', // White surface
+      textSecondary: '#475569', // Slate Grey
+      textTertiary: '#64748B', // Lighter slate
+      textMuted: '#94A3B8', // Even lighter slate
+
+      highlightBg: '#FEF9E7', // Light gold highlight
+      highlightBorder: '#D4AF37', // Gold border
+    },
+  },
+
+  // Component variants
+  buttons: {
+    primary: {
+      color: '#0A192F', // Midnight Navy text on gold
+      bg: 'primary',
+      borderWidth: 0,
+      '&:hover': {
+        bg: 'secondary',
+      },
+    },
+    secondary: {
+      color: 'primary',
+      bg: 'transparent',
+      borderWidth: 1,
+      borderStyle: 'solid',
+      borderColor: 'primary',
+      '&:hover': {
+        bg: 'highlight',
+      },
+    },
+    ghost: {
+      color: 'text',
+      bg: 'transparent',
+      '&:hover': {
+        bg: 'backgroundHover',
+      },
+    },
+  },
+
+  text: {
+    heading: {
+      fontFamily: 'heading',
+      fontWeight: 'heading',
+      lineHeight: 'heading',
+    },
+    body: {
+      fontFamily: 'body',
+      fontWeight: 'body',
+      lineHeight: 'body',
+    },
+    caption: {
+      fontSize: 1,
+      color: 'textSecondary',
+    },
+  },
+
+  cards: {
+    primary: {
+      bg: 'surface',
+      border: '1px solid',
+      borderColor: 'border',
+      borderRadius: 3,
+    },
+    secondary: {
+      bg: 'backgroundSecondary',
+      border: '1px solid',
+      borderColor: 'border',
+      borderRadius: 3,
+    },
+  },
+};
+
+// Neural Pulse theme - Best for high-speed processing, developer tools, and cutting-edge tech
+export const neuralPulseTheme: Theme = {
+  // Spacing scale (used for margin, padding, etc.)
+  space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+
+  // Typography - Modern, technical fonts
+  fonts: {
+    body: '"SF Mono", "Monaco", "Inconsolata", "Fira Code", monospace',
+    heading: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    monospace: '"SF Mono", "Monaco", "Inconsolata", "Fira Code", monospace',
+  },
+
+  fontSizes: [12, 14, 16, 18, 20, 24, 32, 48, 64, 96],
+
+  fontScale: 1.0,
+
+  fontWeights: {
+    body: 400,
+    heading: 600,
+    bold: 700,
+    light: 300,
+    medium: 500,
+    semibold: 600,
+  },
+
+  lineHeights: {
+    body: 1.6,
+    heading: 1.3,
+    tight: 1.25,
+    relaxed: 1.75,
+  },
+
+  // Layout
+  breakpoints: ['640px', '768px', '1024px', '1280px'],
+  sizes: [16, 32, 64, 128, 256, 512, 768, 1024, 1536],
+  radii: [0, 2, 4, 6, 8, 12, 16, 24],
+  shadows: [
+    'none',
+    '0 0 5px rgba(0, 245, 255, 0.1)',
+    '0 0 10px rgba(0, 245, 255, 0.15)',
+    '0 0 20px rgba(0, 245, 255, 0.2)',
+    '0 0 30px rgba(0, 245, 255, 0.25)',
+    '0 0 40px rgba(138, 43, 226, 0.3)',
+  ],
+  zIndices: [0, 1, 10, 20, 30, 40, 50],
+
+  // Colors - Neural Pulse: Deep Charcoal, Electric Cyan, Digital Violet, Pure White
+  colors: {
+    // Base colors
+    text: '#FFFFFF', // Pure White - max contrast
+    background: '#121212', // Deep Charcoal - true dark mode
+    primary: '#00F5FF', // Electric Cyan - vibrant digital energy
+    secondary: '#00C4CC', // Darker cyan for hover
+    accent: '#8A2BE2', // Digital Violet - buttons and data viz
+    highlight: '#1A2A2A', // Cyan-tinted highlight
+    muted: '#2A2A2A', // Dark grey
+
+    // Status colors - Vibrant tech palette
+    success: '#00FF88', // Neon green
+    warning: '#FFB800', // Bright amber
+    error: '#FF4757', // Bright red
+    info: '#00F5FF', // Electric Cyan
+
+    // Additional semantic colors
+    border: '#2A2A2A', // Subtle dark border
+    backgroundSecondary: '#1A1A1A', // Slightly lighter charcoal
+    backgroundTertiary: '#222222', // Even lighter charcoal
+    backgroundLight: '#181818', // Very subtle lighter
+    backgroundHover: '#1E2828', // Cyan-tinted hover
+    surface: '#1A1A1A', // Dark surface
+    textSecondary: '#B0B0B0', // Light grey
+    textTertiary: '#808080', // Medium grey
+    textMuted: '#606060', // Darker grey
+
+    // Search highlight colors
+    highlightBg: '#1A2A35', // Cyan-tinted highlight
+    highlightBorder: '#00F5FF', // Electric Cyan border
+
+    // Text on primary background
+    textOnPrimary: '#121212', // Deep Charcoal on cyan
+  },
+
+  // Component variants
+  buttons: {
+    primary: {
+      color: '#121212', // Dark text on cyan
+      bg: 'primary',
+      borderWidth: 0,
+      '&:hover': {
+        bg: 'secondary',
+      },
+    },
+    secondary: {
+      color: 'accent',
+      bg: 'transparent',
+      borderWidth: 1,
+      borderStyle: 'solid',
+      borderColor: 'accent',
+      '&:hover': {
+        bg: '#1A1A2E', // Violet-tinted background
+      },
+    },
+    ghost: {
+      color: 'text',
+      bg: 'transparent',
+      '&:hover': {
+        bg: 'backgroundHover',
+      },
+    },
+  },
+
+  text: {
+    heading: {
+      fontFamily: 'heading',
+      fontWeight: 'heading',
+      lineHeight: 'heading',
+    },
+    body: {
+      fontFamily: 'body',
+      fontWeight: 'body',
+      lineHeight: 'body',
+    },
+    caption: {
+      fontSize: 1,
+      color: 'textSecondary',
+    },
+  },
+
+  cards: {
+    primary: {
+      bg: 'surface',
+      border: '1px solid',
+      borderColor: 'border',
+      borderRadius: 2,
+    },
+    secondary: {
+      bg: 'backgroundSecondary',
+      border: '1px solid',
+      borderColor: 'accent',
+      borderRadius: 2,
+    },
+  },
+};
+
+// Human-Centric theme - Best for creative AI, user-friendly interfaces, and collaborative tools
+export const humanCentricTheme: Theme = {
+  // Spacing scale (used for margin, padding, etc.)
+  space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+
+  // Typography - Warm, friendly fonts
+  fonts: {
+    body: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    heading: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    monospace: '"Fira Code", "SF Mono", Monaco, Inconsolata, monospace',
+  },
+
+  fontSizes: [12, 14, 16, 18, 20, 24, 32, 48, 64, 96],
+
+  fontScale: 1.0,
+
+  fontWeights: {
+    body: 400,
+    heading: 600,
+    bold: 700,
+    light: 300,
+    medium: 500,
+    semibold: 600,
+  },
+
+  lineHeights: {
+    body: 1.65,
+    heading: 1.3,
+    tight: 1.25,
+    relaxed: 1.8,
+  },
+
+  // Layout
+  breakpoints: ['640px', '768px', '1024px', '1280px'],
+  sizes: [16, 32, 64, 128, 256, 512, 768, 1024, 1536],
+  radii: [0, 4, 8, 12, 16, 20, 24, 32],
+  shadows: [
+    'none',
+    '0 1px 3px 0 rgba(13, 92, 99, 0.08), 0 1px 2px 0 rgba(13, 92, 99, 0.04)',
+    '0 4px 6px -1px rgba(13, 92, 99, 0.1), 0 2px 4px -1px rgba(13, 92, 99, 0.06)',
+    '0 10px 15px -3px rgba(13, 92, 99, 0.1), 0 4px 6px -2px rgba(13, 92, 99, 0.05)',
+    '0 20px 25px -5px rgba(13, 92, 99, 0.1), 0 10px 10px -5px rgba(13, 92, 99, 0.04)',
+    '0 25px 50px -12px rgba(13, 92, 99, 0.2)',
+  ],
+  zIndices: [0, 1, 10, 20, 30, 40, 50],
+
+  // Colors - Human-Centric: Forest Teal, Soft Stone, Terracotta, Eucalyptus
+  colors: {
+    // Base colors
+    text: '#0D5C63', // Forest Teal - balanced and calm
+    background: '#F2F2F2', // Soft Stone - warm and inviting
+    primary: '#E27D60', // Terracotta - the human touch
+    secondary: '#C96A50', // Darker terracotta for hover
+    accent: '#85B09A', // Eucalyptus - soft secondary
+    highlight: '#E8F0EC', // Light eucalyptus tint
+    muted: '#D9D9D9', // Soft grey
+
+    // Status colors - Natural, warm palette
+    success: '#85B09A', // Eucalyptus
+    warning: '#E2A860', // Warm amber
+    error: '#D64545', // Warm red
+    info: '#0D5C63', // Forest Teal
+
+    // Additional semantic colors
+    border: '#D0D0D0', // Soft border
+    backgroundSecondary: '#FFFFFF', // Pure white
+    backgroundTertiary: '#E8E8E8', // Slightly darker stone
+    backgroundLight: '#FAFAFA', // Very light
+    backgroundHover: '#EBE8E5', // Warm hover
+    surface: '#FFFFFF', // White surface
+    textSecondary: '#4A8A8F', // Lighter teal
+    textTertiary: '#6B9B9F', // Even lighter teal
+    textMuted: '#8BABAD', // Muted teal
+
+    // Search highlight colors
+    highlightBg: '#FCE8E3', // Light terracotta
+    highlightBorder: '#E27D60', // Terracotta border
+
+    // Text on primary background
+    textOnPrimary: '#FFFFFF', // White on terracotta
+  },
+
+  // Dark mode variant
+  modes: {
+    dark: {
+      text: '#F2F2F2', // Soft Stone
+      background: '#0D5C63', // Forest Teal
+      primary: '#E27D60', // Terracotta
+      secondary: '#F09A7D', // Lighter terracotta for hover
+      accent: '#85B09A', // Eucalyptus
+      highlight: '#0A4A50', // Darker teal highlight
+      muted: '#1A6B72', // Lighter teal
+
+      success: '#85B09A', // Eucalyptus
+      warning: '#E2A860', // Warm amber
+      error: '#E85555', // Lighter red
+      info: '#85B09A', // Eucalyptus
+
+      border: '#1A6B72', // Teal border
+      backgroundSecondary: '#0A4A50', // Darker teal
+      backgroundTertiary: '#0E5A61', // Mid teal
+      backgroundLight: '#0B4F56', // Subtle lighter
+      backgroundHover: '#0E6068', // Teal hover
+      surface: '#0A4A50', // Dark surface
+      textSecondary: '#C5D5D7', // Light teal-grey
+      textTertiary: '#9BBFC2', // Medium teal-grey
+      textMuted: '#7AA5A8', // Darker teal-grey
+
+      highlightBg: '#1A3A3D', // Dark terracotta tint
+      highlightBorder: '#E27D60', // Terracotta border
+    },
+  },
+
+  // Component variants
+  buttons: {
+    primary: {
+      color: '#FFFFFF', // White text on terracotta
+      bg: 'primary',
+      borderWidth: 0,
+      '&:hover': {
+        bg: 'secondary',
+      },
+    },
+    secondary: {
+      color: 'primary',
+      bg: 'transparent',
+      borderWidth: 1,
+      borderStyle: 'solid',
+      borderColor: 'primary',
+      '&:hover': {
+        bg: '#FCE8E3', // Light terracotta background
+      },
+    },
+    ghost: {
+      color: 'text',
+      bg: 'transparent',
+      '&:hover': {
+        bg: 'backgroundHover',
+      },
+    },
+  },
+
+  text: {
+    heading: {
+      fontFamily: 'heading',
+      fontWeight: 'heading',
+      lineHeight: 'heading',
+    },
+    body: {
+      fontFamily: 'body',
+      fontWeight: 'body',
+      lineHeight: 'body',
+    },
+    caption: {
+      fontSize: 1,
+      color: 'textSecondary',
+    },
+  },
+
+  cards: {
+    primary: {
+      bg: 'surface',
+      border: '1px solid',
+      borderColor: 'border',
+      borderRadius: 4,
+    },
+    secondary: {
+      bg: 'backgroundSecondary',
+      border: '1px solid',
+      borderColor: 'accent',
+      borderRadius: 4,
+    },
+  },
+};
+
 // Slate theme - Sophisticated grey-based theme with vibrant accents
 export const slateTheme: Theme = {
   // Spacing scale (used for margin, padding, etc.)
