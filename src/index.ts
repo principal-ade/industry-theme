@@ -149,6 +149,7 @@ export {
   matrixTheme,
   matrixMinimalTheme,
   slateTheme,
+  slateGoldTheme,
   enterpriseTheme,
   neuralPulseTheme,
   humanCentricTheme,

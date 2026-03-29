@@ -1249,3 +1249,148 @@ export const slateTheme: Theme = {
     },
   },
 };
+
+// Slate Gold theme - Slate's sophisticated greys with Enterprise's Circuit Gold accents
+export const slateGoldTheme: Theme = {
+  // Spacing scale (used for margin, padding, etc.)
+  space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+
+  // Typography
+  fonts: {
+    body: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    heading: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    monospace: '"Fira Code", "SF Mono", Monaco, Inconsolata, monospace',
+  },
+
+  fontSizes: [12, 14, 16, 18, 20, 24, 32, 48, 64, 96],
+
+  fontScale: 1.0,
+
+  fontWeights: {
+    body: 400,
+    heading: 600,
+    bold: 700,
+    light: 300,
+    medium: 500,
+    semibold: 600,
+  },
+
+  lineHeights: {
+    body: 1.6,
+    heading: 1.3,
+    tight: 1.25,
+    relaxed: 1.75,
+  },
+
+  // Layout
+  breakpoints: ['640px', '768px', '1024px', '1280px'],
+  sizes: [16, 32, 64, 128, 256, 512, 768, 1024, 1536],
+  radii: [0, 2, 4, 6, 8, 12, 16, 24],
+  shadows: [
+    'none',
+    '0 1px 3px 0 rgba(0, 0, 0, 0.2)',
+    '0 4px 6px -1px rgba(0, 0, 0, 0.2)',
+    '0 10px 15px -3px rgba(0, 0, 0, 0.2)',
+    '0 20px 25px -5px rgba(0, 0, 0, 0.25)',
+    '0 25px 50px -12px rgba(0, 0, 0, 0.3)',
+  ],
+  zIndices: [0, 1, 10, 20, 30, 40, 50],
+
+  // Colors - Slate greys with Circuit Gold accents
+  colors: {
+    // Base colors - Slate greys with gold primary
+    text: '#9ca3af', // Medium grey for most text
+    background: '#1a1c1e', // Very dark charcoal
+    primary: '#D4AF37', // Circuit Gold - sophisticated accent
+    secondary: '#E5C464', // Lighter gold for hover
+    accent: '#D4AF37', // Circuit Gold
+    highlight: '#2d2a24', // Gold-tinted highlight
+    muted: '#2d3134', // Dark grey
+
+    // Status colors
+    success: '#10b981', // Emerald green
+    warning: '#D4AF37', // Circuit Gold
+    error: '#ef4444', // Red
+    info: '#3b82f6', // Blue
+
+    // Additional semantic colors - Grey palette with gold touches
+    border: '#2d3034', // Subtle grey border
+    backgroundSecondary: '#22252a', // Slightly lighter dark grey
+    backgroundTertiary: '#2d3134', // Even lighter dark grey
+    backgroundLight: '#202325', // Very faint grey
+    backgroundHover: '#2a2720', // Gold-tinted hover
+    surface: '#1f2124', // Near-black surface
+    textSecondary: '#e5e7eb', // Light grey for important text
+    textTertiary: '#6b7280', // Darker grey
+    textMuted: '#4b5563', // Even darker grey
+
+    // Search highlight colors
+    highlightBg: '#3D3215', // Gold highlight
+    highlightBorder: '#D4AF37', // Circuit Gold border
+
+    // Text on primary background
+    textOnPrimary: '#1a1c1e', // Dark text on gold primary
+  },
+
+  // Component variants
+  buttons: {
+    primary: {
+      color: '#1a1c1e', // Dark text on gold
+      bg: 'primary',
+      borderWidth: 0,
+      '&:hover': {
+        bg: 'secondary',
+      },
+    },
+    secondary: {
+      color: 'primary',
+      bg: 'transparent',
+      borderWidth: 1,
+      borderStyle: 'solid',
+      borderColor: 'primary',
+      '&:hover': {
+        bg: 'highlight',
+      },
+    },
+    ghost: {
+      color: 'textSecondary',
+      bg: 'transparent',
+      '&:hover': {
+        bg: 'backgroundHover',
+      },
+    },
+  },
+
+  text: {
+    heading: {
+      fontFamily: 'heading',
+      fontWeight: 'heading',
+      lineHeight: 'heading',
+      color: 'textSecondary',
+    },
+    body: {
+      fontFamily: 'body',
+      fontWeight: 'body',
+      lineHeight: 'body',
+    },
+    caption: {
+      fontSize: 1,
+      color: 'textTertiary',
+    },
+  },
+
+  cards: {
+    primary: {
+      bg: 'surface',
+      border: '1px solid',
+      borderColor: 'border',
+      borderRadius: 3,
+    },
+    secondary: {
+      bg: 'backgroundSecondary',
+      border: '1px solid',
+      borderColor: 'primary',
+      borderRadius: 3,
+    },
+  },
+};
