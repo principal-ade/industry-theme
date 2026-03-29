@@ -1299,7 +1299,7 @@ export const slateGoldTheme: Theme = {
   // Colors - Slate greys with Circuit Gold accents
   colors: {
     // Base colors - Slate greys with gold primary
-    text: '#b0b8c4', // Brighter grey for most text
+    text: '#d0d6e0', // Near-white grey for most text
     background: '#1a1c1e', // Very dark charcoal
     primary: '#E4C04A', // Bright Circuit Gold - sophisticated accent
     secondary: '#F0D060', // Lighter gold for hover
