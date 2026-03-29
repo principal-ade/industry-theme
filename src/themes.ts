@@ -1297,6 +1297,155 @@ export const slateTheme: Theme = {
   },
 };
 
+// Slate Neon theme - Slate's sophisticated greys with neon green and hot pink accents
+export const slateNeonTheme: Theme = {
+  // Spacing scale (used for margin, padding, etc.)
+  space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+
+  // Typography
+  fonts: {
+    body: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    heading: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    monospace: '"Fira Code", "SF Mono", Monaco, Inconsolata, monospace',
+  },
+
+  fontSizes: [12, 14, 16, 18, 20, 24, 32, 48, 64, 96],
+
+  fontScale: 1.0,
+
+  fontWeights: {
+    body: 400,
+    heading: 600,
+    bold: 700,
+    light: 300,
+    medium: 500,
+    semibold: 600,
+  },
+
+  lineHeights: {
+    body: 1.6,
+    heading: 1.3,
+    tight: 1.25,
+    relaxed: 1.75,
+  },
+
+  // Layout
+  breakpoints: ['640px', '768px', '1024px', '1280px'],
+  sizes: [16, 32, 64, 128, 256, 512, 768, 1024, 1536],
+  radii: [0, 2, 4, 6, 8, 12, 16, 24],
+  shadows: [
+    'none',
+    '0 1px 3px 0 rgba(0, 0, 0, 0.2)',
+    '0 4px 6px -1px rgba(0, 0, 0, 0.2)',
+    '0 10px 15px -3px rgba(0, 0, 0, 0.2)',
+    '0 20px 25px -5px rgba(0, 0, 0, 0.25)',
+    '0 25px 50px -12px rgba(0, 0, 0, 0.3)',
+  ],
+  zIndices: [0, 1, 10, 20, 30, 40, 50],
+
+  // Colors - Slate greys with neon green primary and hot pink accent
+  colors: {
+    // Base colors - Slate greys with neon green primary
+    text: '#d0d6e0', // Near-white grey for most text
+    background: '#1a1c1e', // Very dark charcoal
+    primary: '#00ff00', // Neon green from logo
+    secondary: '#00cc00', // Darker green for hover
+    accent: '#FF1493', // Hot pink accent
+    highlight: '#1a2a1a', // Green-tinted highlight
+    muted: '#2d3134', // Dark grey
+
+    // Status colors
+    success: '#00ff00', // Neon green
+    warning: '#f59e0b', // Amber
+    error: '#ef4444', // Red
+    info: '#3b82f6', // Blue
+
+    // Additional semantic colors - Grey palette with green touches
+    border: '#2d3034', // Subtle grey border
+    backgroundSecondary: '#22252a', // Slightly lighter dark grey
+    backgroundTertiary: '#2d3134', // Even lighter dark grey
+    backgroundLight: '#202325', // Very faint grey
+    backgroundHover: '#1e2a1e', // Green-tinted hover
+    surface: '#1f2124', // Near-black surface
+    textSecondary: '#e5e7eb', // Light grey for important text
+    textTertiary: '#6b7280', // Darker grey
+    textMuted: '#4b5563', // Even darker grey
+
+    // Search highlight colors
+    highlightBg: '#1a351a', // Green highlight
+    highlightBorder: '#00ff00', // Green border
+
+    // Text on primary background
+    textOnPrimary: '#1a1c1e', // Dark text on green primary
+    // Text on secondary background
+    textOnSecondary: '#1a1c1e', // Dark text on darker green secondary
+    // Text on accent background
+    textOnAccent: '#ffffff', // White text on hot pink accent
+  },
+
+  // Component variants
+  buttons: {
+    primary: {
+      color: '#1a1c1e', // Dark text on green
+      bg: 'primary',
+      borderWidth: 0,
+      '&:hover': {
+        bg: 'secondary',
+      },
+    },
+    secondary: {
+      color: 'primary',
+      bg: 'transparent',
+      borderWidth: 1,
+      borderStyle: 'solid',
+      borderColor: 'primary',
+      '&:hover': {
+        bg: 'highlight',
+      },
+    },
+    ghost: {
+      color: 'textSecondary',
+      bg: 'transparent',
+      '&:hover': {
+        bg: 'backgroundHover',
+      },
+    },
+  },
+
+  text: {
+    heading: {
+      fontFamily: 'heading',
+      fontWeight: 'heading',
+      lineHeight: 'heading',
+      color: 'textSecondary',
+    },
+    body: {
+      fontFamily: 'body',
+      fontWeight: 'body',
+      lineHeight: 'body',
+    },
+    caption: {
+      fontSize: 1,
+      color: 'textTertiary',
+    },
+  },
+
+  cards: {
+    primary: {
+      bg: 'surface',
+      border: '1px solid',
+      borderColor: 'border',
+      borderRadius: 3,
+    },
+    secondary: {
+      bg: 'backgroundSecondary',
+      border: '1px solid',
+      borderColor: 'primary',
+      borderRadius: 3,
+    },
+  },
+};
+
 // Slate Gold theme - Slate's sophisticated greys with Enterprise's Circuit Gold accents
 export const slateGoldTheme: Theme = {
   // Spacing scale (used for margin, padding, etc.)

@@ -5,6 +5,7 @@ import {
   regalTheme,
   matrixTheme,
   slateTheme,
+  slateNeonTheme,
   slateGoldTheme,
   enterpriseTheme,
   neuralPulseTheme,
@@ -75,6 +76,14 @@ export const SlateGold: Story = {
   args: {
     theme: slateGoldTheme,
     title: 'Slate Gold Theme',
+    showValues: true,
+  },
+};
+
+export const SlateNeon: Story = {
+  args: {
+    theme: slateNeonTheme,
+    title: 'Slate Neon Theme',
     showValues: true,
   },
 };

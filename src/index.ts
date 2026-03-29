@@ -153,6 +153,7 @@ export {
   matrixTheme,
   matrixMinimalTheme,
   slateTheme,
+  slateNeonTheme,
   slateGoldTheme,
   enterpriseTheme,
   neuralPulseTheme,
