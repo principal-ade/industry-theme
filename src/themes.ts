@@ -1350,8 +1350,8 @@ export const slateGoldTheme: Theme = {
     background: '#1a1c1e', // Very dark charcoal
     primary: '#E4C04A', // Bright Circuit Gold - sophisticated accent
     secondary: '#F0D060', // Lighter gold for hover
-    accent: '#E4C04A', // Bright Circuit Gold
-    highlight: '#2d2a24', // Gold-tinted highlight
+    accent: '#2563EB', // Deep Sapphire blue
+    highlight: '#1e2a3d', // Blue-tinted highlight
     muted: '#2d3134', // Dark grey
 
     // Status colors
@@ -1380,7 +1380,7 @@ export const slateGoldTheme: Theme = {
     // Text on secondary background
     textOnSecondary: '#1a1c1e', // Dark text on lighter gold secondary
     // Text on accent background
-    textOnAccent: '#1a1c1e', // Dark text on gold accent
+    textOnAccent: '#ffffff', // White text on blue accent
   },
 
   // Component variants
