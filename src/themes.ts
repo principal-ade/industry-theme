@@ -1492,50 +1492,50 @@ export const slateGoldTheme: Theme = {
   ],
   zIndices: [0, 1, 10, 20, 30, 40, 50],
 
-  // Colors - Slate greys with Circuit Gold accents
+  // Colors - Slate greys with Deep Sapphire blue primary and Circuit Gold accents
   colors: {
-    // Base colors - Slate greys with gold primary
+    // Base colors - Slate greys with blue primary and gold accent
     text: '#d0d6e0', // Near-white grey for most text
     background: '#1a1c1e', // Very dark charcoal
-    primary: '#E4C04A', // Bright Circuit Gold - sophisticated accent
-    secondary: '#64748b', // Slate grey for secondary actions
-    accent: '#2563EB', // Deep Sapphire blue
-    highlight: '#1e2a3d', // Blue-tinted highlight
+    primary: '#2563EB', // Deep Sapphire blue - primary action color
+    secondary: '#1d4ed8', // Darker blue for hover
+    accent: '#E4C04A', // Bright Circuit Gold accent
+    highlight: '#2a2720', // Gold-tinted highlight
     muted: '#2d3134', // Dark grey
 
     // Status colors
     success: '#10b981', // Emerald green
-    warning: '#E4C04A', // Bright Circuit Gold
+    warning: '#E4C04A', // Circuit Gold
     error: '#ef4444', // Red
-    info: '#3b82f6', // Blue
+    info: '#2563EB', // Deep Sapphire blue
 
-    // Additional semantic colors - Grey palette with gold touches
+    // Additional semantic colors - Grey palette with blue/gold touches
     border: '#2d3034', // Subtle grey border
     backgroundSecondary: '#22252a', // Slightly lighter dark grey
     backgroundTertiary: '#2d3134', // Even lighter dark grey
     backgroundLight: '#202325', // Very faint grey
-    backgroundHover: '#2a2720', // Gold-tinted hover
+    backgroundHover: '#1e2a3d', // Blue-tinted hover
     surface: '#1f2124', // Near-black surface
     textSecondary: '#e5e7eb', // Light grey for important text
     textTertiary: '#6b7280', // Darker grey
     textMuted: '#4b5563', // Even darker grey
 
     // Search highlight colors
-    highlightBg: '#3D3215', // Gold highlight
-    highlightBorder: '#E4C04A', // Bright Circuit Gold border
+    highlightBg: '#1e2a3d', // Blue highlight
+    highlightBorder: '#2563EB', // Deep Sapphire blue border
 
     // Text on primary background
-    textOnPrimary: '#1a1c1e', // Dark text on gold primary
+    textOnPrimary: '#ffffff', // White text on blue primary
     // Text on secondary background
-    textOnSecondary: '#ffffff', // White text on slate grey secondary
+    textOnSecondary: '#ffffff', // White text on darker blue secondary
     // Text on accent background
-    textOnAccent: '#ffffff', // White text on blue accent
+    textOnAccent: '#1a1c1e', // Dark text on gold accent
   },
 
   // Component variants
   buttons: {
     primary: {
-      color: '#1a1c1e', // Dark text on gold
+      color: '#ffffff', // White text on blue
       bg: 'primary',
       borderWidth: 0,
       '&:hover': {
@@ -1543,11 +1543,11 @@ export const slateGoldTheme: Theme = {
       },
     },
     secondary: {
-      color: 'primary',
+      color: 'accent',
       bg: 'transparent',
       borderWidth: 1,
       borderStyle: 'solid',
-      borderColor: 'primary',
+      borderColor: 'accent',
       '&:hover': {
         bg: 'highlight',
       },
@@ -1589,7 +1589,7 @@ export const slateGoldTheme: Theme = {
     secondary: {
       bg: 'backgroundSecondary',
       border: '1px solid',
-      borderColor: 'primary',
+      borderColor: 'accent',
       borderRadius: 3,
     },
   },
