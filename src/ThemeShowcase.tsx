@@ -203,6 +203,142 @@ export const ThemeShowcase: React.FC<ThemeShowcaseProps> = ({
             })}
           </div>
 
+          {/* Text on Primary & Accent */}
+          <h3 style={subheadingStyle}>Text on Primary & Accent</h3>
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
+              gap: theme.space[3],
+              marginBottom: theme.space[3],
+            }}
+          >
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                padding: theme.space[2],
+                backgroundColor:
+                  theme.colors.backgroundLight || theme.colors.backgroundTertiary,
+                borderRadius: theme.radii[1],
+              }}
+            >
+              <div
+                style={{
+                  width: 40,
+                  height: 40,
+                  backgroundColor: theme.colors.textOnPrimary,
+                  border: `1px solid ${theme.colors.border}`,
+                  borderRadius: theme.radii[1],
+                  marginRight: theme.space[2],
+                }}
+              />
+              <div>
+                <div
+                  style={{
+                    fontFamily: theme.fonts.monospace,
+                    fontSize: theme.fontSizes[1],
+                    fontWeight: theme.fontWeights.medium,
+                  }}
+                >
+                  textOnPrimary
+                </div>
+                {showValues && (
+                  <div
+                    style={{
+                      fontFamily: theme.fonts.monospace,
+                      fontSize: theme.fontSizes[0],
+                      color: theme.colors.textSecondary,
+                    }}
+                  >
+                    {theme.colors.textOnPrimary}
+                  </div>
+                )}
+              </div>
+            </div>
+            <div
+              style={{
+                padding: theme.space[3],
+                backgroundColor: theme.colors.primary,
+                borderRadius: theme.radii[1],
+                border: `1px solid ${theme.colors.border}`,
+              }}
+            >
+              <div
+                style={{
+                  fontFamily: theme.fonts.monospace,
+                  fontSize: theme.fontSizes[2],
+                  fontWeight: theme.fontWeights.medium,
+                  color: theme.colors.textOnPrimary,
+                }}
+              >
+                Sample text on primary
+              </div>
+            </div>
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                padding: theme.space[2],
+                backgroundColor:
+                  theme.colors.backgroundLight || theme.colors.backgroundTertiary,
+                borderRadius: theme.radii[1],
+              }}
+            >
+              <div
+                style={{
+                  width: 40,
+                  height: 40,
+                  backgroundColor: theme.colors.textOnAccent,
+                  border: `1px solid ${theme.colors.border}`,
+                  borderRadius: theme.radii[1],
+                  marginRight: theme.space[2],
+                }}
+              />
+              <div>
+                <div
+                  style={{
+                    fontFamily: theme.fonts.monospace,
+                    fontSize: theme.fontSizes[1],
+                    fontWeight: theme.fontWeights.medium,
+                  }}
+                >
+                  textOnAccent
+                </div>
+                {showValues && (
+                  <div
+                    style={{
+                      fontFamily: theme.fonts.monospace,
+                      fontSize: theme.fontSizes[0],
+                      color: theme.colors.textSecondary,
+                    }}
+                  >
+                    {theme.colors.textOnAccent}
+                  </div>
+                )}
+              </div>
+            </div>
+            <div
+              style={{
+                padding: theme.space[3],
+                backgroundColor: theme.colors.accent,
+                borderRadius: theme.radii[1],
+                border: `1px solid ${theme.colors.border}`,
+              }}
+            >
+              <div
+                style={{
+                  fontFamily: theme.fonts.monospace,
+                  fontSize: theme.fontSizes[2],
+                  fontWeight: theme.fontWeights.medium,
+                  color: theme.colors.textOnAccent,
+                }}
+              >
+                Sample text on accent
+              </div>
+            </div>
+          </div>
+
           {/* Background Colors */}
           <h3 style={subheadingStyle}>Background Colors</h3>
           <div
@@ -515,7 +651,7 @@ export const ThemeShowcase: React.FC<ThemeShowcaseProps> = ({
               style={{
                 padding: `${theme.space[2]}px ${theme.space[3]}px`,
                 backgroundColor: theme.colors.primary,
-                color: '#ffffff',
+                color: theme.colors.textOnPrimary,
                 borderRadius: theme.radii[2],
                 fontFamily: theme.fonts.body,
                 fontSize: theme.fontSizes[1],

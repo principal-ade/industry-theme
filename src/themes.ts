@@ -86,6 +86,8 @@ export const regalTheme: Theme = {
 
     // Text on primary background
     textOnPrimary: '#1a1f2e', // Dark text on warm amber primary
+    // Text on accent background
+    textOnAccent: '#1a1f2e', // Dark text on muted gold accent
   },
 
   // Component variants
@@ -226,6 +228,8 @@ export const terminalTheme: Theme = {
 
     // Text on primary background
     textOnPrimary: '#ffffff', // White text on blue primary
+    // Text on accent background
+    textOnAccent: '#0a0a0a', // Dark text on bright green accent
   },
 
   // Light mode for terminal theme
@@ -260,6 +264,10 @@ export const terminalTheme: Theme = {
       // Search highlight colors
       highlightBg: '#fff9c4', // Light yellow highlight
       highlightBorder: '#fff389', // Stronger yellow for border
+
+      // Text on backgrounds
+      textOnPrimary: '#ffffff', // White text on blue primary
+      textOnAccent: '#ffffff', // White text on green accent
     },
   },
 
@@ -405,6 +413,8 @@ export const matrixTheme: Theme = {
 
     // Text on primary background
     textOnPrimary: '#000000', // Black text on green primary
+    // Text on accent background
+    textOnAccent: '#000000', // Black text on green accent
   },
 
   // Component variants
@@ -549,6 +559,8 @@ export const matrixMinimalTheme: Theme = {
 
     // Text on primary background
     textOnPrimary: '#000000', // Black text on off-white primary
+    // Text on accent background
+    textOnAccent: '#000000', // Black text on green accent
   },
 
   // Component variants
@@ -693,6 +705,8 @@ export const enterpriseTheme: Theme = {
 
     // Text on primary background
     textOnPrimary: '#0A192F', // Midnight Navy on gold
+    // Text on accent background
+    textOnAccent: '#0A192F', // Midnight Navy on gold accent
   },
 
   // Light mode variant
@@ -723,6 +737,10 @@ export const enterpriseTheme: Theme = {
 
       highlightBg: '#FEF9E7', // Light gold highlight
       highlightBorder: '#D4AF37', // Gold border
+
+      // Text on backgrounds
+      textOnPrimary: '#0A192F', // Midnight Navy on gold
+      textOnAccent: '#0A192F', // Midnight Navy on gold accent
     },
   },
 
@@ -868,6 +886,8 @@ export const neuralPulseTheme: Theme = {
 
     // Text on primary background
     textOnPrimary: '#121212', // Deep Charcoal on cyan
+    // Text on accent background
+    textOnAccent: '#FFFFFF', // White text on violet accent
   },
 
   // Component variants
@@ -1012,6 +1032,8 @@ export const humanCentricTheme: Theme = {
 
     // Text on primary background
     textOnPrimary: '#FFFFFF', // White on terracotta
+    // Text on accent background
+    textOnAccent: '#FFFFFF', // White on eucalyptus
   },
 
   // Dark mode variant
@@ -1042,6 +1064,10 @@ export const humanCentricTheme: Theme = {
 
       highlightBg: '#1A3A3D', // Dark terracotta tint
       highlightBorder: '#E27D60', // Terracotta border
+
+      // Text on backgrounds
+      textOnPrimary: '#FFFFFF', // White on terracotta
+      textOnAccent: '#0D5C63', // Forest Teal on eucalyptus
     },
   },
 
@@ -1187,6 +1213,8 @@ export const slateTheme: Theme = {
 
     // Text on primary background
     textOnPrimary: '#1a1c1e', // Dark text on light grey primary
+    // Text on accent background
+    textOnAccent: '#1a1c1e', // Dark text on amber accent
   },
 
   // Component variants
@@ -1330,6 +1358,8 @@ export const slateGoldTheme: Theme = {
 
     // Text on primary background
     textOnPrimary: '#1a1c1e', // Dark text on gold primary
+    // Text on accent background
+    textOnAccent: '#1a1c1e', // Dark text on gold accent
   },
 
   // Component variants

@@ -73,6 +73,8 @@ export const defaultMarkdownTheme: Theme = {
 
     // Text on primary background
     textOnPrimary: '#ffffff', // White text on blue primary
+    // Text on accent background
+    textOnAccent: '#ffffff', // White text on dark accent
   },
 
   // Component variants
@@ -197,6 +199,8 @@ export const defaultTerminalTheme: Theme = {
 
     // Text on primary background
     textOnPrimary: '#000000', // Black text on amber primary
+    // Text on accent background
+    textOnAccent: '#000000', // Black text on white accent
   },
 
   // Component variants
@@ -322,6 +326,8 @@ export const defaultEditorTheme: Theme = {
 
     // Text on primary background
     textOnPrimary: '#ffffff', // White text on blue primary
+    // Text on accent background
+    textOnAccent: '#ffffff', // White text on purple accent
   },
 
   // Component variants

@@ -85,6 +85,8 @@ export const landingPageTheme: Theme = {
 
     // Text on primary background
     textOnPrimary: '#000000', // Black text on cyan primary
+    // Text on accent background
+    textOnAccent: '#ffffff', // White text on blue accent
 
     // Additional brand colors used in gradients
     // These are not part of the standard Theme interface but used in components
@@ -211,6 +213,8 @@ export const landingPageLightTheme: Theme = {
 
     // Text on primary background
     textOnPrimary: '#ffffff', // White text on cyan primary
+    // Text on accent background
+    textOnAccent: '#ffffff', // White text on blue accent
   },
 
   buttons: {
