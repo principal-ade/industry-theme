@@ -203,8 +203,8 @@ export const ThemeShowcase: React.FC<ThemeShowcaseProps> = ({
             })}
           </div>
 
-          {/* Text on Primary & Accent */}
-          <h3 style={subheadingStyle}>Text on Primary & Accent</h3>
+          {/* Text on Primary, Secondary & Accent */}
+          <h3 style={subheadingStyle}>Text on Primary, Secondary & Accent</h3>
           <div
             style={{
               display: 'grid',
@@ -273,6 +273,68 @@ export const ThemeShowcase: React.FC<ThemeShowcaseProps> = ({
                 }}
               >
                 Sample text on primary
+              </div>
+            </div>
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                padding: theme.space[2],
+                backgroundColor:
+                  theme.colors.backgroundLight || theme.colors.backgroundTertiary,
+                borderRadius: theme.radii[1],
+              }}
+            >
+              <div
+                style={{
+                  width: 40,
+                  height: 40,
+                  backgroundColor: theme.colors.textOnSecondary,
+                  border: `1px solid ${theme.colors.border}`,
+                  borderRadius: theme.radii[1],
+                  marginRight: theme.space[2],
+                }}
+              />
+              <div>
+                <div
+                  style={{
+                    fontFamily: theme.fonts.monospace,
+                    fontSize: theme.fontSizes[1],
+                    fontWeight: theme.fontWeights.medium,
+                  }}
+                >
+                  textOnSecondary
+                </div>
+                {showValues && (
+                  <div
+                    style={{
+                      fontFamily: theme.fonts.monospace,
+                      fontSize: theme.fontSizes[0],
+                      color: theme.colors.textSecondary,
+                    }}
+                  >
+                    {theme.colors.textOnSecondary}
+                  </div>
+                )}
+              </div>
+            </div>
+            <div
+              style={{
+                padding: theme.space[3],
+                backgroundColor: theme.colors.secondary,
+                borderRadius: theme.radii[1],
+                border: `1px solid ${theme.colors.border}`,
+              }}
+            >
+              <div
+                style={{
+                  fontFamily: theme.fonts.monospace,
+                  fontSize: theme.fontSizes[2],
+                  fontWeight: theme.fontWeights.medium,
+                  color: theme.colors.textOnSecondary,
+                }}
+              >
+                Sample text on secondary
               </div>
             </div>
             <div

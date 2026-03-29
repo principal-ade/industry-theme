@@ -85,6 +85,8 @@ export const landingPageTheme: Theme = {
 
     // Text on primary background
     textOnPrimary: '#000000', // Black text on cyan primary
+    // Text on secondary background
+    textOnSecondary: '#ffffff', // White text on darker cyan secondary
     // Text on accent background
     textOnAccent: '#ffffff', // White text on blue accent
 
@@ -213,6 +215,8 @@ export const landingPageLightTheme: Theme = {
 
     // Text on primary background
     textOnPrimary: '#ffffff', // White text on cyan primary
+    // Text on secondary background
+    textOnSecondary: '#000000', // Black text on lighter cyan secondary
     // Text on accent background
     textOnAccent: '#ffffff', // White text on blue accent
   },

@@ -118,6 +118,8 @@ export interface Theme {
 
     // Text color for use on primary background (e.g., button text)
     textOnPrimary: string;
+    // Text color for use on secondary background
+    textOnSecondary: string;
     // Text color for use on accent background
     textOnAccent: string;
   };

@@ -86,6 +86,8 @@ export const regalTheme: Theme = {
 
     // Text on primary background
     textOnPrimary: '#1a1f2e', // Dark text on warm amber primary
+    // Text on secondary background
+    textOnSecondary: '#1a1f2e', // Dark text on lighter amber secondary
     // Text on accent background
     textOnAccent: '#1a1f2e', // Dark text on muted gold accent
   },
@@ -228,6 +230,8 @@ export const terminalTheme: Theme = {
 
     // Text on primary background
     textOnPrimary: '#ffffff', // White text on blue primary
+    // Text on secondary background
+    textOnSecondary: '#0a0a0a', // Dark text on lighter blue secondary
     // Text on accent background
     textOnAccent: '#0a0a0a', // Dark text on bright green accent
   },
@@ -267,6 +271,7 @@ export const terminalTheme: Theme = {
 
       // Text on backgrounds
       textOnPrimary: '#ffffff', // White text on blue primary
+      textOnSecondary: '#ffffff', // White text on darker blue secondary
       textOnAccent: '#ffffff', // White text on green accent
     },
   },
@@ -413,6 +418,8 @@ export const matrixTheme: Theme = {
 
     // Text on primary background
     textOnPrimary: '#000000', // Black text on green primary
+    // Text on secondary background
+    textOnSecondary: '#000000', // Black text on darker green secondary
     // Text on accent background
     textOnAccent: '#000000', // Black text on green accent
   },
@@ -559,6 +566,8 @@ export const matrixMinimalTheme: Theme = {
 
     // Text on primary background
     textOnPrimary: '#000000', // Black text on off-white primary
+    // Text on secondary background
+    textOnSecondary: '#000000', // Black text on light gray secondary
     // Text on accent background
     textOnAccent: '#000000', // Black text on green accent
   },
@@ -705,6 +714,8 @@ export const enterpriseTheme: Theme = {
 
     // Text on primary background
     textOnPrimary: '#0A192F', // Midnight Navy on gold
+    // Text on secondary background
+    textOnSecondary: '#0A192F', // Midnight Navy on lighter gold secondary
     // Text on accent background
     textOnAccent: '#0A192F', // Midnight Navy on gold accent
   },
@@ -740,6 +751,7 @@ export const enterpriseTheme: Theme = {
 
       // Text on backgrounds
       textOnPrimary: '#0A192F', // Midnight Navy on gold
+      textOnSecondary: '#0A192F', // Midnight Navy on darker gold secondary
       textOnAccent: '#0A192F', // Midnight Navy on gold accent
     },
   },
@@ -886,6 +898,8 @@ export const neuralPulseTheme: Theme = {
 
     // Text on primary background
     textOnPrimary: '#121212', // Deep Charcoal on cyan
+    // Text on secondary background
+    textOnSecondary: '#121212', // Deep Charcoal on darker cyan secondary
     // Text on accent background
     textOnAccent: '#FFFFFF', // White text on violet accent
   },
@@ -1032,6 +1046,8 @@ export const humanCentricTheme: Theme = {
 
     // Text on primary background
     textOnPrimary: '#FFFFFF', // White on terracotta
+    // Text on secondary background
+    textOnSecondary: '#FFFFFF', // White on darker terracotta secondary
     // Text on accent background
     textOnAccent: '#FFFFFF', // White on eucalyptus
   },
@@ -1067,6 +1083,7 @@ export const humanCentricTheme: Theme = {
 
       // Text on backgrounds
       textOnPrimary: '#FFFFFF', // White on terracotta
+      textOnSecondary: '#0D5C63', // Forest Teal on lighter terracotta secondary
       textOnAccent: '#0D5C63', // Forest Teal on eucalyptus
     },
   },
@@ -1213,6 +1230,8 @@ export const slateTheme: Theme = {
 
     // Text on primary background
     textOnPrimary: '#1a1c1e', // Dark text on light grey primary
+    // Text on secondary background
+    textOnSecondary: '#e5e7eb', // Light text on medium grey secondary
     // Text on accent background
     textOnAccent: '#1a1c1e', // Dark text on amber accent
   },
@@ -1358,6 +1377,8 @@ export const slateGoldTheme: Theme = {
 
     // Text on primary background
     textOnPrimary: '#1a1c1e', // Dark text on gold primary
+    // Text on secondary background
+    textOnSecondary: '#1a1c1e', // Dark text on lighter gold secondary
     // Text on accent background
     textOnAccent: '#1a1c1e', // Dark text on gold accent
   },

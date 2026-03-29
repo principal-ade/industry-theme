@@ -73,6 +73,8 @@ export const defaultMarkdownTheme: Theme = {
 
     // Text on primary background
     textOnPrimary: '#ffffff', // White text on blue primary
+    // Text on secondary background
+    textOnSecondary: '#ffffff', // White text on darker blue secondary
     // Text on accent background
     textOnAccent: '#ffffff', // White text on dark accent
   },
@@ -199,6 +201,8 @@ export const defaultTerminalTheme: Theme = {
 
     // Text on primary background
     textOnPrimary: '#000000', // Black text on amber primary
+    // Text on secondary background
+    textOnSecondary: '#000000', // Black text on gold secondary
     // Text on accent background
     textOnAccent: '#000000', // Black text on white accent
   },
@@ -326,6 +330,8 @@ export const defaultEditorTheme: Theme = {
 
     // Text on primary background
     textOnPrimary: '#ffffff', // White text on blue primary
+    // Text on secondary background
+    textOnSecondary: '#ffffff', // White text on medium blue secondary
     // Text on accent background
     textOnAccent: '#ffffff', // White text on purple accent
   },
