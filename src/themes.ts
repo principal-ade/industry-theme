@@ -1299,17 +1299,17 @@ export const slateGoldTheme: Theme = {
   // Colors - Slate greys with Circuit Gold accents
   colors: {
     // Base colors - Slate greys with gold primary
-    text: '#9ca3af', // Medium grey for most text
+    text: '#b0b8c4', // Brighter grey for most text
     background: '#1a1c1e', // Very dark charcoal
-    primary: '#D4AF37', // Circuit Gold - sophisticated accent
-    secondary: '#E5C464', // Lighter gold for hover
-    accent: '#D4AF37', // Circuit Gold
+    primary: '#E4C04A', // Bright Circuit Gold - sophisticated accent
+    secondary: '#F0D060', // Lighter gold for hover
+    accent: '#E4C04A', // Bright Circuit Gold
     highlight: '#2d2a24', // Gold-tinted highlight
     muted: '#2d3134', // Dark grey
 
     // Status colors
     success: '#10b981', // Emerald green
-    warning: '#D4AF37', // Circuit Gold
+    warning: '#E4C04A', // Bright Circuit Gold
     error: '#ef4444', // Red
     info: '#3b82f6', // Blue
 
@@ -1326,7 +1326,7 @@ export const slateGoldTheme: Theme = {
 
     // Search highlight colors
     highlightBg: '#3D3215', // Gold highlight
-    highlightBorder: '#D4AF37', // Circuit Gold border
+    highlightBorder: '#E4C04A', // Bright Circuit Gold border
 
     // Text on primary background
     textOnPrimary: '#1a1c1e', // Dark text on gold primary
