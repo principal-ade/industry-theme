@@ -1650,8 +1650,8 @@ export const iceTangerineTheme: Theme = {
   // Colors - Ice blue backgrounds with tangerine/teal accents
   colors: {
     // Base colors
-    text: '#0c1741', // Dark navy for primary text
-    background: '#f7fcfd', // Very light ice blue
+    text: '#0c3741', // Dark teal for primary text
+    background: '#dff1f5', // Light ice blue
     primary: '#ff6b35', // Bright tangerine - primary action color
     secondary: '#e55a2a', // Darker tangerine for hover
     accent: '#0893d2', // Bright teal accent
