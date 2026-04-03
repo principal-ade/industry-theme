@@ -1594,3 +1594,158 @@ export const slateGoldTheme: Theme = {
     },
   },
 };
+
+/**
+ * Ice Tangerine Theme
+ *
+ * A fresh, light theme with cool ice blue backgrounds and vibrant tangerine accents.
+ * Cool ice blue meets hot tangerine for a fresh, vibrant summer tech aesthetic.
+ */
+export const iceTangerineTheme: Theme = {
+  // Spacing scale (used for margin, padding, etc.)
+  space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+
+  // Typography
+  fonts: {
+    body: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    heading:
+      '"Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    monospace: '"Fira Code", "SF Mono", Monaco, Inconsolata, monospace',
+  },
+
+  fontSizes: [12, 14, 16, 18, 20, 24, 32, 48, 64, 96],
+
+  fontScale: 1.0,
+
+  fontWeights: {
+    body: 400,
+    heading: 600,
+    bold: 700,
+    light: 300,
+    medium: 500,
+    semibold: 600,
+  },
+
+  lineHeights: {
+    body: 1.6,
+    heading: 1.3,
+    tight: 1.25,
+    relaxed: 1.75,
+  },
+
+  // Layout
+  breakpoints: ['640px', '768px', '1024px', '1280px'],
+  sizes: [16, 32, 64, 128, 256, 512, 768, 1024, 1536],
+  radii: [0, 2, 4, 6, 8, 12, 16, 24],
+  shadows: [
+    'none',
+    '0 1px 3px 0 rgba(12, 23, 65, 0.08)',
+    '0 4px 6px -1px rgba(12, 23, 65, 0.1)',
+    '0 10px 15px -3px rgba(12, 23, 65, 0.1)',
+    '0 20px 25px -5px rgba(12, 23, 65, 0.15)',
+    '0 25px 50px -12px rgba(12, 23, 65, 0.2)',
+  ],
+  zIndices: [0, 1, 10, 20, 30, 40, 50],
+
+  // Colors - Ice blue backgrounds with tangerine/teal accents
+  colors: {
+    // Base colors
+    text: '#0c1741', // Dark navy for primary text
+    background: '#f7fcfd', // Very light ice blue
+    primary: '#ff6b35', // Bright tangerine - primary action color
+    secondary: '#e55a2a', // Darker tangerine for hover
+    accent: '#0893d2', // Bright teal accent
+    highlight: '#fff4f0', // Light tangerine tint highlight
+    muted: '#e8f4f6', // Muted ice blue
+
+    // Status colors
+    success: '#10b981', // Emerald green
+    warning: '#f59e0b', // Amber
+    error: '#ef4444', // Red
+    info: '#0893d2', // Bright teal (matches accent)
+
+    // Additional semantic colors
+    border: '#dffff5', // Very light cyan border
+    backgroundSecondary: '#ffffff', // White for cards/sections
+    backgroundTertiary: '#eef8fa', // Slightly darker ice blue
+    backgroundLight: '#fafeff', // Almost white ice
+    backgroundHover: '#fff0eb', // Light tangerine hover
+    surface: '#ffffff', // White surface
+    textSecondary: '#3e6b77', // Muted teal for secondary text
+    textTertiary: '#5a8a96', // Lighter teal
+    textMuted: '#7fa8b2', // Even lighter teal
+
+    // Search highlight colors
+    highlightBg: '#fff4f0', // Light tangerine highlight
+    highlightBorder: '#ff6b35', // Tangerine border
+
+    // Text on primary background
+    textOnPrimary: '#ffffff', // White text on tangerine primary
+    // Text on secondary background
+    textOnSecondary: '#ffffff', // White text on darker tangerine
+    // Text on accent background
+    textOnAccent: '#ffffff', // White text on teal accent
+  },
+
+  // Component variants
+  buttons: {
+    primary: {
+      color: '#ffffff', // White text on tangerine
+      bg: 'primary',
+      borderWidth: 0,
+      '&:hover': {
+        bg: 'secondary',
+      },
+    },
+    secondary: {
+      color: 'accent',
+      bg: 'transparent',
+      borderWidth: 1,
+      borderStyle: 'solid',
+      borderColor: 'accent',
+      '&:hover': {
+        bg: 'highlight',
+      },
+    },
+    ghost: {
+      color: 'textSecondary',
+      bg: 'transparent',
+      '&:hover': {
+        bg: 'backgroundHover',
+      },
+    },
+  },
+
+  text: {
+    heading: {
+      fontFamily: 'heading',
+      fontWeight: 'heading',
+      lineHeight: 'heading',
+      color: 'text',
+    },
+    body: {
+      fontFamily: 'body',
+      fontWeight: 'body',
+      lineHeight: 'body',
+    },
+    caption: {
+      fontSize: 1,
+      color: 'textTertiary',
+    },
+  },
+
+  cards: {
+    primary: {
+      bg: 'surface',
+      border: '1px solid',
+      borderColor: 'border',
+      borderRadius: 3,
+    },
+    secondary: {
+      bg: 'backgroundSecondary',
+      border: '1px solid',
+      borderColor: 'accent',
+      borderRadius: 3,
+    },
+  },
+};

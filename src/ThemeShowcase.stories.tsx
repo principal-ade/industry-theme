@@ -7,6 +7,7 @@ import {
   slateTheme,
   slateNeonTheme,
   slateGoldTheme,
+  iceTangerineTheme,
   enterpriseTheme,
   neuralPulseTheme,
   humanCentricTheme,
@@ -84,6 +85,14 @@ export const SlateNeon: Story = {
   args: {
     theme: slateNeonTheme,
     title: 'Slate Neon Theme',
+    showValues: true,
+  },
+};
+
+export const IceTangerine: Story = {
+  args: {
+    theme: iceTangerineTheme,
+    title: 'Ice Tangerine Theme',
     showValues: true,
   },
 };

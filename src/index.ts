@@ -155,6 +155,7 @@ export {
   slateTheme,
   slateNeonTheme,
   slateGoldTheme,
+  iceTangerineTheme,
   enterpriseTheme,
   neuralPulseTheme,
   humanCentricTheme,
