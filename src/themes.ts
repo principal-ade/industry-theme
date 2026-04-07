@@ -1669,7 +1669,9 @@ export const iceTangerineTheme: Theme = {
     backgroundSecondary: '#ffffff', // White for cards/sections
     backgroundTertiary: '#eef8fa', // Slightly darker ice blue
     backgroundLight: '#fafeff', // Almost white ice
+    backgroundDark: '#0d274d', // Deep navy/midnight blue for dark backgrounds
     backgroundHover: '#fff0eb', // Light tangerine hover
+    primaryBlade: '#edf5f8', // Primary blade/panel color
     surface: '#ffffff', // White surface
     textSecondary: '#3e6b77', // Muted teal for secondary text
     textTertiary: '#5a8a96', // Lighter teal

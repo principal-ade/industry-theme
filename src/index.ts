@@ -107,6 +107,7 @@ export interface Theme {
     backgroundTertiary: string;
     backgroundLight: string;
     backgroundHover: string;
+    primaryBlade?: string;
     surface: string;
     textSecondary: string;
     textTertiary: string;

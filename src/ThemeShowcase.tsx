@@ -414,7 +414,9 @@ export const ThemeShowcase: React.FC<ThemeShowcaseProps> = ({
               'backgroundSecondary',
               'backgroundTertiary',
               'backgroundLight',
+              'backgroundDark',
               'backgroundHover',
+              'primaryBlade',
               'surface',
             ].map((key) => {
               const color = theme.colors[key as keyof typeof theme.colors];
