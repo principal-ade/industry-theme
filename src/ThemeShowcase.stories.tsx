@@ -8,6 +8,7 @@ import {
   slateNeonTheme,
   slateGoldTheme,
   iceTangerineTheme,
+  iceTangerineDarkTheme,
   enterpriseTheme,
   neuralPulseTheme,
   humanCentricTheme,
@@ -93,6 +94,14 @@ export const IceTangerine: Story = {
   args: {
     theme: iceTangerineTheme,
     title: 'Ice Tangerine Theme',
+    showValues: true,
+  },
+};
+
+export const IceTangerineDark: Story = {
+  args: {
+    theme: iceTangerineDarkTheme,
+    title: 'Ice Tangerine Dark Theme',
     showValues: true,
   },
 };

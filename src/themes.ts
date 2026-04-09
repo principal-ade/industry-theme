@@ -1343,50 +1343,50 @@ export const slateNeonTheme: Theme = {
   ],
   zIndices: [0, 1, 10, 20, 30, 40, 50],
 
-  // Colors - Slate greys with neon green primary and hot pink accent
+  // Colors - Slate greys with tangerine primary and neon green accent
   colors: {
-    // Base colors - Slate greys with neon green primary
+    // Base colors - Slate greys with tangerine primary
     text: '#d0d6e0', // Near-white grey for most text
     background: '#1a1c1e', // Very dark charcoal
-    primary: '#00ff00', // Neon green from logo
-    secondary: '#00cc00', // Darker green for hover
-    accent: '#FF1493', // Hot pink accent
-    highlight: '#1a2a1a', // Green-tinted highlight
+    primary: '#ff6b35', // Bright tangerine
+    secondary: '#ff8257', // Lighter tangerine for hover
+    accent: '#00ff00', // Neon green accent
+    highlight: '#2a1f18', // Tangerine-tinted highlight
     muted: '#2d3134', // Dark grey
 
     // Status colors
-    success: '#00ff00', // Neon green
+    success: '#10b981', // Emerald green
     warning: '#f59e0b', // Amber
     error: '#ef4444', // Red
     info: '#3b82f6', // Blue
 
-    // Additional semantic colors - Grey palette with green touches
+    // Additional semantic colors - Grey palette with tangerine touches
     border: '#2d3034', // Subtle grey border
     backgroundSecondary: '#22252a', // Slightly lighter dark grey
     backgroundTertiary: '#2d3134', // Even lighter dark grey
     backgroundLight: '#202325', // Very faint grey
-    backgroundHover: '#1e2a1e', // Green-tinted hover
+    backgroundHover: '#2a1f18', // Tangerine-tinted hover
     surface: '#1f2124', // Near-black surface
     textSecondary: '#e5e7eb', // Light grey for important text
     textTertiary: '#6b7280', // Darker grey
     textMuted: '#4b5563', // Even darker grey
 
     // Search highlight colors
-    highlightBg: '#1a351a', // Green highlight
-    highlightBorder: '#00ff00', // Green border
+    highlightBg: '#2a1f18', // Tangerine highlight
+    highlightBorder: '#ff6b35', // Tangerine border
 
     // Text on primary background
-    textOnPrimary: '#1a1c1e', // Dark text on green primary
+    textOnPrimary: '#ffffff', // White text on tangerine primary
     // Text on secondary background
-    textOnSecondary: '#1a1c1e', // Dark text on darker green secondary
+    textOnSecondary: '#ffffff', // White text on lighter tangerine secondary
     // Text on accent background
-    textOnAccent: '#ffffff', // White text on hot pink accent
+    textOnAccent: '#1a1c1e', // Dark text on neon green accent
   },
 
   // Component variants
   buttons: {
     primary: {
-      color: '#1a1c1e', // Dark text on green
+      color: '#ffffff', // White text on tangerine
       bg: 'primary',
       borderWidth: 0,
       '&:hover': {
@@ -1567,6 +1567,163 @@ export const slateGoldTheme: Theme = {
       fontWeight: 'heading',
       lineHeight: 'heading',
       color: 'textSecondary',
+    },
+    body: {
+      fontFamily: 'body',
+      fontWeight: 'body',
+      lineHeight: 'body',
+    },
+    caption: {
+      fontSize: 1,
+      color: 'textTertiary',
+    },
+  },
+
+  cards: {
+    primary: {
+      bg: 'surface',
+      border: '1px solid',
+      borderColor: 'border',
+      borderRadius: 3,
+    },
+    secondary: {
+      bg: 'backgroundSecondary',
+      border: '1px solid',
+      borderColor: 'accent',
+      borderRadius: 3,
+    },
+  },
+};
+
+/**
+ * Ice Tangerine Dark Theme
+ *
+ * A dark version of the ice tangerine theme with deep navy backgrounds and vibrant tangerine accents.
+ * Midnight navy meets hot tangerine for a sleek, modern aesthetic.
+ */
+export const iceTangerineDarkTheme: Theme = {
+  // Spacing scale (used for margin, padding, etc.)
+  space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+
+  // Typography
+  fonts: {
+    body: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    heading:
+      '"Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    monospace: '"Fira Code", "SF Mono", Monaco, Inconsolata, monospace',
+  },
+
+  fontSizes: [12, 14, 16, 18, 20, 24, 32, 48, 64, 96],
+
+  fontScale: 1.0,
+
+  fontWeights: {
+    body: 400,
+    heading: 600,
+    bold: 700,
+    light: 300,
+    medium: 500,
+    semibold: 600,
+  },
+
+  lineHeights: {
+    body: 1.6,
+    heading: 1.3,
+    tight: 1.25,
+    relaxed: 1.75,
+  },
+
+  // Layout
+  breakpoints: ['640px', '768px', '1024px', '1280px'],
+  sizes: [16, 32, 64, 128, 256, 512, 768, 1024, 1536],
+  radii: [0, 2, 4, 6, 8, 12, 16, 24],
+  shadows: [
+    'none',
+    '0 1px 3px 0 rgba(0, 0, 0, 0.3)',
+    '0 4px 6px -1px rgba(0, 0, 0, 0.4)',
+    '0 10px 15px -3px rgba(0, 0, 0, 0.4)',
+    '0 20px 25px -5px rgba(0, 0, 0, 0.5)',
+    '0 25px 50px -12px rgba(0, 0, 0, 0.6)',
+  ],
+  zIndices: [0, 1, 10, 20, 30, 40, 50],
+
+  // Colors - Deep navy backgrounds with tangerine/teal accents
+  colors: {
+    // Base colors
+    text: '#d0e5ea', // Light ice blue for primary text
+    background: '#0d274d', // Deep navy/midnight blue
+    primary: '#ff6b35', // Bright tangerine - primary action color
+    secondary: '#ff8257', // Lighter tangerine for hover
+    accent: '#0893d2', // Bright teal accent
+    highlight: '#1a3452', // Lighter navy highlight
+    muted: '#1a3856', // Muted navy
+
+    // Status colors
+    success: '#10b981', // Emerald green
+    warning: '#f59e0b', // Amber
+    error: '#ef4444', // Red
+    info: '#0893d2', // Bright teal (matches accent)
+
+    // Additional semantic colors
+    border: '#1e3a5f', // Navy border
+    backgroundSecondary: '#0f2e58', // Slightly lighter navy for cards/sections
+    backgroundTertiary: '#123461', // Even lighter navy
+    backgroundLight: '#0b1f3f', // Darker navy
+    backgroundDark: '#0a1829', // Extra dark navy
+    backgroundHover: '#2a1f18', // Dark tangerine tint hover
+    primaryBlade: '#0e2b53', // Primary blade/panel color
+    surface: '#0f2e58', // Navy surface
+    textSecondary: '#9fc4d4', // Muted ice blue for secondary text
+    textTertiary: '#7ba8bc', // Darker ice blue
+    textMuted: '#5a8a9e', // Even darker ice blue
+
+    // Search highlight colors
+    highlightBg: '#2a1f18', // Dark tangerine highlight
+    highlightBorder: '#ff6b35', // Tangerine border
+
+    // Text on primary background
+    textOnPrimary: '#ffffff', // White text on tangerine primary
+    // Text on secondary background
+    textOnSecondary: '#ffffff', // White text on lighter tangerine
+    // Text on accent background
+    textOnAccent: '#ffffff', // White text on teal accent
+  },
+
+  // Component variants
+  buttons: {
+    primary: {
+      color: '#ffffff', // White text on tangerine
+      bg: 'primary',
+      borderWidth: 0,
+      '&:hover': {
+        bg: 'secondary',
+      },
+    },
+    secondary: {
+      color: 'accent',
+      bg: 'transparent',
+      borderWidth: 1,
+      borderStyle: 'solid',
+      borderColor: 'accent',
+      '&:hover': {
+        bg: 'highlight',
+      },
+    },
+    ghost: {
+      color: 'textSecondary',
+      bg: 'transparent',
+      '&:hover': {
+        bg: 'backgroundHover',
+      },
+    },
+  },
+
+  text: {
+    heading: {
+      fontFamily: 'heading',
+      fontWeight: 'heading',
+      lineHeight: 'heading',
+      color: 'text',
     },
     body: {
       fontFamily: 'body',

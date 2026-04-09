@@ -106,6 +106,7 @@ export interface Theme {
     backgroundSecondary: string;
     backgroundTertiary: string;
     backgroundLight: string;
+    backgroundDark?: string;
     backgroundHover: string;
     primaryBlade?: string;
     surface: string;
@@ -157,6 +158,7 @@ export {
   slateNeonTheme,
   slateGoldTheme,
   iceTangerineTheme,
+  iceTangerineDarkTheme,
   enterpriseTheme,
   neuralPulseTheme,
   humanCentricTheme,
