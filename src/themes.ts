@@ -1348,7 +1348,7 @@ export const slateNeonTheme: Theme = {
     // Base colors - Slate greys with tangerine primary
     text: '#d0d6e0', // Near-white grey for most text
     background: '#1a1c1e', // Very dark charcoal
-    primary: '#ff6b35', // Bright tangerine
+    primary: '#F36F41', // Bright tangerine
     secondary: '#ff8257', // Lighter tangerine for hover
     accent: '#00ff00', // Neon green accent
     highlight: '#2a1f18', // Tangerine-tinted highlight
@@ -1373,10 +1373,10 @@ export const slateNeonTheme: Theme = {
 
     // Search highlight colors
     highlightBg: '#2a1f18', // Tangerine highlight
-    highlightBorder: '#ff6b35', // Tangerine border
+    highlightBorder: '#F36F41', // Tangerine border
 
     // Text on primary background
-    textOnPrimary: '#ffffff', // White text on tangerine primary
+    textOnPrimary: '#1a1c1e', // Dark text on tangerine primary (AA contrast)
     // Text on secondary background
     textOnSecondary: '#ffffff', // White text on lighter tangerine secondary
     // Text on accent background
