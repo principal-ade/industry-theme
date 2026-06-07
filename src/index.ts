@@ -234,4 +234,26 @@ export { overrideColors, makeTheme, addMode, getMode } from './themeHelpers';
 export { ThemeShowcase } from './ThemeShowcase';
 export type { ThemeShowcaseProps } from './ThemeShowcase';
 
+// Export contrast evaluation utilities
+export {
+  WCAG_THRESHOLDS,
+  CONTRAST_PAIRS,
+  parseColor,
+  relativeLuminance,
+  contrastRatio,
+  gradeContrast,
+  evaluateThemeContrast,
+} from './contrast';
+export type {
+  ContrastUse,
+  ContrastLevel,
+  ContrastPair,
+  ContrastResult,
+  ThemeContrastReport,
+} from './contrast';
+
+// Export ContrastReport component
+export { ContrastReport } from './ContrastReport';
+export type { ContrastReportProps } from './ContrastReport';
+
 export default theme;
