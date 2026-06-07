@@ -1,4 +1,4 @@
-import React, { createContext, useContext, ReactNode, useState, useEffect } from 'react';
+import React, { createContext, useContext, ReactNode, useState } from 'react';
 
 import { getMode } from './themeHelpers';
 
@@ -75,25 +75,6 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
       colors: getMode(customTheme, mode),
     };
   }, [customTheme, mode]);
-
-  // Load saved mode from localStorage on mount
-  useEffect(() => {
-    if (!initialMode) {
-      const savedMode = localStorage.getItem('principlemd-theme-mode');
-      if (savedMode) {
-        setMode(savedMode);
-      }
-    }
-  }, [initialMode]);
-
-  // Save mode to localStorage when it changes
-  useEffect(() => {
-    if (mode) {
-      localStorage.setItem('principlemd-theme-mode', mode);
-    } else {
-      localStorage.removeItem('principlemd-theme-mode');
-    }
-  }, [mode]);
 
   const value: ThemeContextValue = {
     theme: activeTheme,
