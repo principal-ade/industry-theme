@@ -98,9 +98,8 @@ const borderRadius = getRadius(theme, 1); // theme.radii[1]
 
 The theme system supports automatic light/dark mode switching:
 
-- Automatically detects system preference on first load
-- Saves user preference to localStorage
-- Provides `toggleColorMode()` function
+- Mode is held in React state for the lifetime of the provider (not persisted)
+- Seed the initial mode via the `initialMode` prop
 - Dark mode colors are defined in `theme.colors.modes.dark`
 
 ## Migration from old theme
