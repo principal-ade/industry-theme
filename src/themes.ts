@@ -1651,7 +1651,7 @@ export const iceTangerineDarkTheme: Theme = {
   colors: {
     // Base colors
     text: '#d0e5ea', // Light ice blue for primary text
-    background: '#0d274d', // Deep navy/midnight blue
+    background: '#0a1829', // Deep midnight navy (promoted from backgroundDark)
     primary: '#ff6b35', // Bright tangerine - primary action color
     secondary: '#ff8257', // Lighter tangerine for hover
     accent: '#0893d2', // Bright teal accent
@@ -1665,34 +1665,34 @@ export const iceTangerineDarkTheme: Theme = {
     info: '#0893d2', // Bright teal (matches accent)
 
     // Additional semantic colors
-    border: '#1e3a5f', // Navy border
+    border: '#5a82aa', // Navy border (brightened for 3:1 WCAG contrast)
     backgroundSecondary: '#0f2e58', // Slightly lighter navy for cards/sections
     backgroundTertiary: '#123461', // Even lighter navy
     backgroundLight: '#0b1f3f', // Darker navy
-    backgroundDark: '#0a1829', // Extra dark navy
+    backgroundDark: '#040b15', // Deepest navy backdrop
     backgroundHover: '#2a1f18', // Dark tangerine tint hover
     primaryBlade: '#0e2b53', // Primary blade/panel color
     surface: '#0f2e58', // Navy surface
     textSecondary: '#9fc4d4', // Muted ice blue for secondary text
     textTertiary: '#7ba8bc', // Darker ice blue
-    textMuted: '#5a8a9e', // Even darker ice blue
+    textMuted: '#73a0b3', // Even darker ice blue (lightened for 4.5:1 WCAG contrast)
 
     // Search highlight colors
     highlightBg: '#2a1f18', // Dark tangerine highlight
     highlightBorder: '#ff6b35', // Tangerine border
 
     // Text on primary background
-    textOnPrimary: '#ffffff', // White text on tangerine primary
+    textOnPrimary: '#0d274d', // Deep navy text on tangerine primary (4.5:1+ WCAG)
     // Text on secondary background
-    textOnSecondary: '#ffffff', // White text on lighter tangerine
+    textOnSecondary: '#0d274d', // Deep navy text on lighter tangerine (4.5:1+ WCAG)
     // Text on accent background
-    textOnAccent: '#ffffff', // White text on teal accent
+    textOnAccent: '#0a1829', // Dark navy text on teal accent (4.5:1+ WCAG)
   },
 
   // Component variants
   buttons: {
     primary: {
-      color: '#ffffff', // White text on tangerine
+      color: '#0d274d', // Deep navy text on tangerine (4.5:1+ WCAG)
       bg: 'primary',
       borderWidth: 0,
       '&:hover': {
