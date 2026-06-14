@@ -1652,7 +1652,7 @@ export const iceTangerineDarkTheme: Theme = {
     // Base colors
     text: '#d0e5ea', // Light ice blue for primary text
     background: '#0a1829', // Deep midnight navy (promoted from backgroundDark)
-    primary: '#ff6b35', // Bright tangerine - primary action color
+    primary: '#E05D2B', // Bright tangerine - primary action color
     secondary: '#ff8257', // Lighter tangerine for hover
     accent: '#0893d2', // Bright teal accent
     highlight: '#1a3452', // Lighter navy highlight
@@ -1669,7 +1669,7 @@ export const iceTangerineDarkTheme: Theme = {
     backgroundSecondary: '#0f2e58', // Slightly lighter navy for cards/sections
     backgroundTertiary: '#123461', // Even lighter navy
     backgroundLight: '#0b1f3f', // Darker navy
-    backgroundDark: '#040b15', // Deepest navy backdrop
+    backgroundDark: '#161B26', // Deepest navy backdrop
     backgroundHover: '#2a1f18', // Dark tangerine tint hover
     primaryBlade: '#0e2b53', // Primary blade/panel color
     surface: '#0f2e58', // Navy surface
