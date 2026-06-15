@@ -12,8 +12,6 @@ import {
   enterpriseTheme,
   neuralPulseTheme,
   humanCentricTheme,
-  landingPageTheme,
-  landingPageLightTheme,
 } from './themes';
 
 const meta: Meta<typeof ThemeShowcase> = {
@@ -126,22 +124,6 @@ export const HumanCentric: Story = {
   args: {
     theme: humanCentricTheme,
     title: 'Human-Centric Theme',
-    showValues: true,
-  },
-};
-
-export const LandingPageDark: Story = {
-  args: {
-    theme: landingPageTheme,
-    title: 'Landing Page Theme (Dark)',
-    showValues: true,
-  },
-};
-
-export const LandingPageLight: Story = {
-  args: {
-    theme: landingPageLightTheme,
-    title: 'Landing Page Theme (Light)',
     showValues: true,
   },
 };

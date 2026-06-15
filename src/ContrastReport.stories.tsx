@@ -13,8 +13,6 @@ import {
   enterpriseTheme,
   neuralPulseTheme,
   humanCentricTheme,
-  landingPageTheme,
-  landingPageLightTheme,
 } from './themes';
 
 const allThemes = [
@@ -30,8 +28,6 @@ const allThemes = [
   { name: 'Enterprise', theme: enterpriseTheme },
   { name: 'Neural Pulse', theme: neuralPulseTheme },
   { name: 'Human-Centric', theme: humanCentricTheme },
-  { name: 'Landing Page (Dark)', theme: landingPageTheme },
-  { name: 'Landing Page (Light)', theme: landingPageLightTheme },
 ];
 
 const meta: Meta<typeof ContrastReport> = {
@@ -72,6 +68,3 @@ export const Terminal: Story = {
   args: { title: 'Terminal Theme', theme: terminalTheme },
 };
 
-export const LandingPageDark: Story = {
-  args: { title: 'Landing Page (Dark)', theme: landingPageTheme },
-};

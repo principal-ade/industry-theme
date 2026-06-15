@@ -4,7 +4,6 @@
 
 import { Theme } from './index';
 export { defaultMarkdownTheme, defaultEditorTheme, defaultTerminalTheme } from './defaultThemes';
-export { landingPageTheme, landingPageLightTheme } from './landingPageTheme';
 
 // Regal theme (previous default) - Dark Academia with warm amber gold
 export const regalTheme: Theme = {
@@ -1650,22 +1649,22 @@ export const iceTangerineDarkTheme: Theme = {
   // Colors - Deep navy backgrounds with tangerine/teal accents
   colors: {
     // Base colors
-    text: '#d0e5ea', // Light ice blue for primary text
+    text: '#d7e1e3', // Soft ice blue for primary text (desaturated to read cleaner)
     background: '#0a1829', // Deep midnight navy (promoted from backgroundDark)
     primary: '#E05D2B', // Bright tangerine - primary action color
     secondary: '#ff8257', // Lighter tangerine for hover
-    accent: '#0893d2', // Bright teal accent
+    accent: '#2ec5e8', // Brighter cyan-teal accent (lifts off navy in dark mode)
     highlight: '#1a3452', // Lighter navy highlight
     muted: '#1a3856', // Muted navy
 
     // Status colors
-    success: '#10b981', // Emerald green
-    warning: '#f59e0b', // Amber
-    error: '#ef4444', // Red
-    info: '#0893d2', // Bright teal (matches accent)
+    success: '#2dd4a7', // Teal-leaning green — harmonizes with the teal accent
+    warning: '#f5a623', // Warm gold — complements the tangerine palette
+    error: '#f2604d', // Coral red — warm-shifted to fit the tangerine family
+    info: '#2ec5e8', // Brighter cyan-teal (matches accent)
 
     // Additional semantic colors
-    border: '#5a82aa', // Navy border (brightened for 3:1 WCAG contrast)
+    border: '#2c4866', // Dim navy border — barely-there separation against the navy backgrounds
     backgroundSecondary: '#0f2e58', // Slightly lighter navy for cards/sections
     backgroundTertiary: '#123461', // Even lighter navy
     backgroundLight: '#0b1f3f', // Darker navy
@@ -1673,9 +1672,9 @@ export const iceTangerineDarkTheme: Theme = {
     backgroundHover: '#2a1f18', // Dark tangerine tint hover
     primaryBlade: '#0e2b53', // Primary blade/panel color
     surface: '#0f2e58', // Navy surface
-    textSecondary: '#9fc4d4', // Muted ice blue for secondary text
-    textTertiary: '#7ba8bc', // Darker ice blue
-    textMuted: '#73a0b3', // Even darker ice blue (lightened for 4.5:1 WCAG contrast)
+    textSecondary: '#acbfc7', // Soft secondary text (desaturated to match primary)
+    textTertiary: '#8ba2ac', // Soft tertiary text
+    textMuted: '#839aa3', // Soft muted text (still 4.5:1+ WCAG contrast)
 
     // Search highlight colors
     highlightBg: '#2a1f18', // Dark tangerine highlight

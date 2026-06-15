@@ -3,7 +3,7 @@
  * Based on https://theme-ui.com/theme-spec
  */
 
-import { terminalTheme } from './themes';
+import { iceTangerineDarkTheme } from './themes';
 
 // Component style variant types
 type ButtonVariant = {
@@ -145,8 +145,8 @@ export interface Theme {
   };
 }
 
-// Default theme - Terminal theme for developers
-export const theme: Theme = terminalTheme;
+// Default theme - Ice Tangerine Dark
+export const theme: Theme = iceTangerineDarkTheme;
 
 // Export all themes for direct access
 export {
@@ -165,8 +165,6 @@ export {
   defaultMarkdownTheme,
   defaultEditorTheme,
   defaultTerminalTheme,
-  landingPageTheme,
-  landingPageLightTheme,
 } from './themes';
 
 /**
