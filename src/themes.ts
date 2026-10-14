@@ -1368,7 +1368,7 @@ export const slateNeonTheme: Theme = {
     surface: '#1f2124', // Near-black surface
     textSecondary: '#e5e7eb', // Light grey for important text
     textTertiary: '#6b7280', // Darker grey
-    textMuted: '#4b5563', // Even darker grey
+    textMuted: '#8b95a3', // Muted grey — lightened from #4b5563 for legibility
 
     // Search highlight colors
     highlightBg: '#2a1f18', // Tangerine highlight
